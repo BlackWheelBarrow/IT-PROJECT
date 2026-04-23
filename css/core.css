@@ -86,7 +86,7 @@ footer {
     font-size : 15px;
     list-style-type : none;
     text-align : left ;
-    padding-left :3px; 
+    padding-left :6px; 
 }
 .links ul li{
     font-size : 12px;
@@ -142,7 +142,7 @@ li ,i{
     font-size : 15px;
 }
 .logoFooter > span {
-    display : block;
+    display : inline-block;
 
 }
 @media screen and (min-width : 320px) and (max-width : 651px){
