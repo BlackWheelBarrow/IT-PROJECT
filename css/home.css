@@ -23,6 +23,78 @@
     font-weight : 300;
 }
 .stars {
-    margin : 0 8%;
+    margin : 50px 8%;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+    font-size : 30px;
+    text-align :center;
+}
+.visitors{
+    margin : 50px 8% 20px 8%;
+    text-transform : uppercase;
+    color : black;
+    letter-spacing: 6px;
+    display : flex;
+    justify-content :space-around;
+    align-items :center;
+}
+.visitors h3{
+    font-weight : 100;
+    font-size : 25px;
+    background-color : rgb(239, 239, 239);
+    padding : 10px 30px ;
+    margin-bottom : 10px;
+    border-radius : 10px;
+    border-left :  #4B6F68 solid 3px;;
+}
+.visitors span{
+    letter-spacing: 0px;
+    font-weight : 300;
+    font-size : 40px;
     
+}
+.visitors h2{
+    font-size : 50px;
+    font-weight : 300;
+    color : #4B6F68;
+    border-radius : 10px;
+    border-bottom :  #4B6F68 solid 3px;;
+
+}
+.starsIcon {
+    font-size : 30px;
+    margin-left : 20px;
+    background-color : rgb(239, 239, 239);
+    padding: 5px 0 5px 8px;
+    border-radius : 20px;
+}
+@media screen and (min-width : 320px) and (max-width : 651px){
+    .visitors {
+        display : block;
+        text-align : center;
+    }
+    .visitors h2 {
+        font-size: 30px;
+        margin-bottom : 20px;
+    }
+    .visitors h3 {
+        padding : 5px;
+        font-size: 15px;
+        margin-bottom : 20px;
+    }
+    .visitors h3 span {
+        font-size: 25px;
+    }
+    .stars span{
+        margin-bottom : 10px;
+    }
+    .starsIcon {
+        margin : 0;
+        background-color : rgb(239, 239, 239);
+        padding: 10px 10px 10px 13px;
+    }
+    .stars span{
+        font-size : 30px;
+        display : inline-block;
+    }
 }
