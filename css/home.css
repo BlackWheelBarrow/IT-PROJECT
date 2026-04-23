@@ -1,0 +1,24 @@
+.hotelImage {
+    background-image : url("../imgs/hotelHomePage.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
+    border-bottom-right-radius : 30px; 
+    border-bottom-left-radius : 30px; 
+}
+.welcomeSection{
+    padding : 150px 8% 200px;
+    background-color :rgba(80, 80, 80, 0.673);
+    color : white;
+    text-transform :uppercase;
+    letter-spacing : 3px;
+}
+.hotelImage,.welcomeSection{
+    border-bottom-right-radius : 30px; 
+    border-bottom-left-radius : 30px; 
+}
+.slogan{
+    font-size : 35px;
+    margin-bottom : 20px;
+    line-height : 1.4 ;
+    font-weight : 300;
+}

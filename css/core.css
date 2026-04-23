@@ -1,3 +1,7 @@
+@font-face{
+    font-family : font1;
+    src : url("../fonts/ElmsSans-VariableFont_wght.ttf");
+}
 *{
     margin : 0;
     box-sizing:border-box;
@@ -19,6 +23,7 @@ header ,.secondRow{
 }
 .logo{ 
     font-size : 25px;
+    border : solid #D9BB80 1px;
 }
 
 header ul li{
@@ -45,6 +50,8 @@ header ul li:hover {
     justify-content : space-between;
     width : 100%;
     padding : 20px 8%;
+    border-top-right-radius : 30px; 
+    border-top-left-radius : 30px; 
 }
 .secondRow{
     display : flex;
@@ -54,6 +61,7 @@ header ul li:hover {
 footer {
     margin-top : 20px;
     display : block;
+
 }
 .social {
     text-align : center;
@@ -95,11 +103,20 @@ footer {
     letter-spacing : 5px;
 }
 .logoFooter { 
-    padding-top : 40px;
+    padding-top : 15px;
     color  : #D9BB80;
     letter-spacing : 3px;
     font-size : 30px;
+
 }
+.logoFooter > span ,.logo{
+    border : solid #D9BB80 1px;
+    padding : 5px;
+    border-radius : 10px;
+    text-align : center;
+    padding-left :8px;
+}
+
 .copyright { 
     font-size : 15px;
     color  : #D9BB80;
@@ -123,6 +140,10 @@ li ,i{
 }
 .mail i {
     font-size : 15px;
+}
+.logoFooter > span {
+    display : block;
+
 }
 @media screen and (min-width : 320px) and (max-width : 651px){
     .listForMobile { 
