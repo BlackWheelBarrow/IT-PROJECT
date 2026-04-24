@@ -250,3 +250,15 @@ li ,i{
         margin : 0 10%;
     }
 }
+@media screen and (min-width : 652px) and (max-width : 802px){
+    .logo {
+        font-size : 15px;
+    }
+    .mobileLinks {
+        margin : 0 10%;
+    }
+    header ul li{
+        font-size : 14px;
+    }
+}
+
