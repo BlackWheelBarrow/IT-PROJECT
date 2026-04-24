@@ -1,0 +1,333 @@
+@font-face{
+    font-family : font1;
+    src : url("../fonts/ElmsSans-VariableFont_wght.ttf");
+}
+*{
+    margin : 0;
+    box-sizing:border-box;
+}
+a{
+    color : none ;
+    text-decoration : none;
+}
+header ,.firstRow,.secondRow{
+    padding : 20px 7%;
+    background-color : #4B6F68;
+    color  : #D9BB80;
+    display : flex;
+    justify-content : space-between;
+    letter-spacing : 3px;
+}
+header ,.secondRow{
+        align-items : center;
+}
+.logo{ 
+    font-size : 25px;
+    border : solid #D9BB80 1px;
+}
+header ul li{
+    color  : #D9BB80;
+    letter-spacing : 2px;
+    display : inline;
+    list-style-type : none;
+    margin-left : 10px;
+    font-size : 15px;
+    padding : 5px;
+    transition : 0.2s;
+    text-transform : uppercase;
+}
+header ul li:hover {
+    border-bottom : solid #D9BB80 2px;
+}
+.active { 
+    border-bottom : solid #D9BB80 2px;
+}
+.listForMobile {
+    display : none;
+}
+.firstRow {
+    display : block;
+    width : 100%;
+    padding : 40px 8%;
+    border-top-right-radius : 30px; 
+    border-top-left-radius : 30px; 
+}
+.secondRow{
+    display : flex;
+    justify-content : space-between;
+    background-color : #385650;
+} 
+footer {
+    margin-top : 20px;
+    display : block;
+}
+.social {
+    text-align : left;
+    font-size : 20px;
+}
+.social i{ 
+    transition : 0.3s;
+}
+.social i:hover {
+    color : rgb(164, 164, 164)
+}
+
+.icon { 
+    margin-top : 10px;
+}
+.icon i {
+    padding : 5px;
+    font-size : 30px;
+} 
+.links ul {
+    font-size : 15px;
+    list-style-type : none;
+    text-align : left ;
+    padding-left : 10px;
+    padding-top : 5px;
+}
+.links ul li{
+    font-size : 12px;
+    margin-top : 5px;
+    transition : 0.3s;
+    color :  #D9BB80;
+    text-decoration : none;
+    text-transform : uppercase;
+}
+.links ul li:hover{
+    color : #aeaeae
+}
+.l1 {
+    letter-spacing : 2px;
+}
+.l2 {
+    letter-spacing : 5px;
+}
+.logoFooter { 
+    padding-top : 15px;
+    color  : #D9BB80;
+    letter-spacing : 3px;
+    font-size : 30px;
+    
+}
+.logoFooter > span ,.logo{
+    border : solid #D9BB80 1px;
+    padding : 5px;
+    border-radius : 10px;
+    text-align : center;
+    padding-left :8px;
+}
+.logoFooter > span{
+    margin-bottom : 10px;
+}
+
+.copyright { 
+    font-size : 15px;
+    color  : #D9BB80;
+    letter-spacing : 2px;
+    
+}
+li ,i{
+    color : #D9BB80;
+}
+.massage p , .massage span {
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    display : inline-block;
+    width : 100%;
+}
+.massage { 
+    width : 30%;
+}
+.footerWord {
+    font-size: 15px;
+    letter-spacing: 5px;
+    border-bottom: solid 2px #D9BB80;
+    padding: 0 3px 0px 10px;
+    text-align: left;
+    display: inline-block;
+    margin : auto;
+}
+.mail {
+    display : flex;
+    align-items : center;
+}
+.mail{
+    font-size : 15px;
+}
+.logoFooter > span {
+    display : inline-block;
+}
+.sloganDescription {
+    font-size : 10px;
+}
+.sloganDescription a{
+    font-size : 15px;
+}
+.mobileLinks, .quickLinksForMobile,.logoFooterForMobile{
+    display :none;
+}
+.footerForDesktop {
+    display : flex;
+    justify-content :space-around;
+}
+.theme { 
+    display : inline;
+    padding : 10px;
+    background-color : #385650;
+    border-radius : 4px ;
+}
+.theme img {
+    vertical-align :bottom;
+    margin : 0 7px;
+    transition : 0.3s;
+}
+.theme img:hover {
+    filter : grayscale(130%);
+}
+.theme li {
+    margin-left : 0px;
+    text-align : center;
+}
+.sloganFooter {
+    font-size : 12px;
+    display : inline-block;
+    padding : 10px;
+    text-transform : uppercase;
+}
+@media screen and (min-width : 320px) and (max-width : 737px){
+    .theme {
+        display : none;
+    }
+    .listForMobile { 
+        display : inline;
+        font-size: 30px;
+        border-bottom : none;
+    }
+
+    .listForMobile i { 
+        transition : 0.4s;
+    }
+
+    .listForMobile i:hover { 
+        color : #aeaeae;
+    }
+    .listForMobile:hover { 
+        border-bottom : none;
+    }
+    .desktop {
+        display : none;
+    }
+    .logoFooter {
+        display : none;
+    }
+    .logoFooterForMobile{
+        display : block;
+    }
+    .quickLinksForMobile {
+        display : flex;
+    }
+    .firstRow div{
+        padding : 10px;
+    }
+    .firstRow{
+        padding : 0px;
+    }
+    .footerForDesktop {
+        display :none;
+    }
+    .footerWord {
+        margin : 0 0 10px 0;
+        font-size : 12px;
+        padding : 0;
+        text-align : center;
+    }
+    .mobileLinks {
+        display : flex;
+        justify-content : space-between;
+    }
+    .links{
+        width : 50%;
+        font-size : 15px;
+    }
+    .logoContainerForMobile ,.mail{
+        display :inline-flex; 
+        width : 100%;
+        justify-content : center;
+    }
+    .logoContainerForMobile span ,.logo{
+        border : solid #D9BB80 1px;
+        padding : 5px;
+        border-radius : 10px;
+        text-align : center;
+        padding-left :8px;
+    }
+    .mail {
+        font-size : 15px;
+    }
+    .massage p {
+        margin-top : 10px
+    }
+    .massage {
+        width :50%;
+    }
+    .social {
+        width : 40%;
+    }
+    .copyright {
+        font-size : 10px;
+    }
+    .secondRow {
+        padding : 5%;
+    }
+    .links ul {
+        font-size : 15px;
+        list-style-type : none;
+        text-align : left ;
+        padding-left : 0px;
+        padding-top : 5px;
+    }
+    header ul{
+        padding-left : 10px;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 357px){
+    .secondRow {
+        padding : 3%;
+    }
+    .social {
+        width : 32%;
+        font-size : 15px;
+    }
+    .copyright {
+        font-size : 10px;
+    }
+    
+}
+@media screen and (min-width : 406px) and (max-width : 651px){
+    .mobileLinks {
+        margin : 0 10%;
+    }
+}
+@media screen and (min-width : 652px) and (max-width : 802px){
+    .logo {
+        font-size : 15px;
+    }
+    .mobileLinks {
+        margin : 0 10%;
+    }
+    header ul li{
+        font-size : 14px;
+    }
+}
+@media screen and (min-width : 651px) and (max-width : 931px){
+    .hide {
+        display : none;
+    }
+}
+@media screen and (min-width : 652px) and (max-width : 764px){
+    .visitors h2 {
+        font-size: 30px;
+    }
+}
