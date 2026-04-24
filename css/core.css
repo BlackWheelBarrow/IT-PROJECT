@@ -25,7 +25,6 @@ header ,.secondRow{
     font-size : 25px;
     border : solid #D9BB80 1px;
 }
-
 header ul li{
     color  : #D9BB80;
     letter-spacing : 2px;
@@ -131,14 +130,16 @@ footer {
 li ,i{
     color : #D9BB80;
 }
-.massage span {
+.massage p , .massage span {
     letter-spacing: 5px;
     margin-bottom: 10px;
     text-align: center;
     display : inline-block;
     width : 100%;
 }
-
+.massage { 
+    width : 30%;
+}
 .footerWord {
     font-size: 15px;
     letter-spacing: 5px;
@@ -175,7 +176,6 @@ li ,i{
     display : inline;
     padding : 10px;
     background-color : #385650;
-    display :flex;
     border-radius : 4px ;
 }
 .theme img {
@@ -190,7 +190,16 @@ li ,i{
     margin-left : 0px;
     text-align : center;
 }
-@media screen and (min-width : 320px) and (max-width : 651px){
+.sloganFooter {
+    font-size : 12px;
+    display : inline-block;
+    padding : 10px;
+    text-transform : uppercase;
+}
+@media screen and (min-width : 320px) and (max-width : 737px){
+    .theme {
+        display : none;
+    }
     .listForMobile { 
         display : inline;
         font-size: 30px;
@@ -224,9 +233,10 @@ li ,i{
     }
     .mobileLinks {
         display : flex;
+        justify-content : space-between;
     }
     .links{
-        width : 107%;
+        width : 50%;
         font-size : 15px;
     }
     .logoContainerForMobile ,.mail{
@@ -247,6 +257,9 @@ li ,i{
     .massage p {
         margin-top : 10px
     }
+    .massage {
+        width :50%;
+    }
     .social {
         width : 40%;
     }
@@ -262,6 +275,9 @@ li ,i{
         text-align : left ;
         padding-left : 0px;
         padding-top : 5px;
+    }
+    header ul{
+        padding-left : 10px;
     }
 }
 @media screen and (min-width : 320px) and (max-width : 357px){
@@ -293,4 +309,8 @@ li ,i{
         font-size : 14px;
     }
 }
-
+@media screen and (min-width : 651px) and (max-width : 931px){
+    .hide {
+        display : none;
+    }
+}
