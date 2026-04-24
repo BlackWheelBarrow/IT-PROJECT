@@ -203,6 +203,18 @@ li ,i{
     .listForMobile { 
         display : inline;
         font-size: 30px;
+        border-bottom : none;
+    }
+
+    .listForMobile i { 
+        transition : 0.4s;
+    }
+
+    .listForMobile i:hover { 
+        color : #aeaeae;
+    }
+    .listForMobile:hover { 
+        border-bottom : none;
     }
     .desktop {
         display : none;
@@ -312,5 +324,10 @@ li ,i{
 @media screen and (min-width : 651px) and (max-width : 931px){
     .hide {
         display : none;
+    }
+}
+@media screen and (min-width : 652px) and (max-width : 764px){
+    .visitors h2 {
+        font-size: 30px;
     }
 }
