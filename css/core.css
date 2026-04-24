@@ -16,7 +16,7 @@ a{
 }
 header ,.firstRow,.secondRow{
     padding : 20px 7%;
-    background-color : ;
+    background-color : #4B6F68;
     color  : #D9BB80;
     display : flex;
     justify-content : space-between;
