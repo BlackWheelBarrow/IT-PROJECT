@@ -1,0 +1,100 @@
+.login {
+    display : flex;
+    margin : 40px 20%;
+    box-shadow : 0 10px 10px;
+    border : none;
+    border-radius : 10px;
+    text-transform : capitalize;
+    font-family : font2;
+    font-weight : 200;
+    overflow : hidden;
+}
+form , form input,form label{
+    display : block;
+    width : 100% ;
+}
+.loginW {
+    padding : 80px 30px;
+    width : 70%;
+    background-color:white;
+}
+.loginW > span {
+    text-align : center;
+    font-size : 45px;
+    color : #508b7f;
+    margin-bottom : 50px;
+    display : block;
+}
+.loginImg {
+    background-image : url("../imgs/loginImage.png");
+    background-size : cover;
+    width : 50%;
+}
+.inputLabels {
+    margin-bottom : 10px;
+    display : block;
+    font-size : 20px;
+}
+form input:nth-child(4),form input:nth-child(2){ 
+    padding : 10px;
+    border-radius : 10px;
+    border : solid #508b7f 1px;
+    margin-bottom : 10px;
+    font-weight : 100;
+    font-size : 20px;
+}
+button {
+    width : 100%;
+    padding : 10px;
+    background-color :#508b7f;
+    color : white;
+    border-radius : 5px;
+    border : none;
+    margin-top : 10px;
+    transition : 0.3s
+}
+button:hover{ 
+    background-color :#4B6F68;
+}
+@media screen and (max-width : 768px ){
+    .login {
+        margin : 40px 10%;
+    }
+}
+@media screen and (max-width : 725px ){
+    .loginImg{
+        display : none;
+    }
+    .loginW {
+        padding : 80px 30px;
+        width : 100%;
+    }
+    main{
+        background-image :url(../imgs/loginImage.png);
+        background-size : cover;
+    }
+    .login {
+        margin-top : 30px;
+        margin-bottom : 30px;
+    }
+    footer { 
+        margin-top :0 ;
+    }
+    .firstRow {
+        border-radius : 0;
+    }
+    main { 
+        padding : 20px;
+    }
+}
+@media screen and (max-width : 443px ){
+    .login {
+        margin : 40px 1%;
+    }   
+    .loginW {
+        padding : 80px 15px;
+    }
+    form a,form span{
+        font-size : 13px;
+    }
+}
