@@ -47,8 +47,7 @@ header ul li:hover {
     display : none;
 }
 .firstRow {
-    display : flex;
-    justify-content : space-between;
+    display : block;
     width : 100%;
     padding : 20px 8%;
     border-top-right-radius : 30px; 
@@ -62,10 +61,10 @@ header ul li:hover {
 footer {
     margin-top : 20px;
     display : block;
-
+    
 }
 .social {
-    text-align : center;
+    text-align : left;
     font-size : 20px;
 }
 .icon { 
@@ -75,19 +74,12 @@ footer {
     padding : 5px;
     font-size : 30px;
 } 
-.footerWord { 
-    font-size : 15px;
-    letter-spacing : 5px;
-    border-bottom : solid 2px #D9BB80;
-    padding : 0 3px 5px 10px;
-    margin-bottom : 10px;
-    text-align : left;
-}
 .links ul {
     font-size : 15px;
     list-style-type : none;
     text-align : left ;
-    padding-left :6px; 
+    padding-left : 10px;
+    padding-top : 5px;
 }
 .links ul li{
     font-size : 12px;
@@ -111,7 +103,7 @@ footer {
     color  : #D9BB80;
     letter-spacing : 3px;
     font-size : 30px;
-
+    
 }
 .logoFooter > span ,.logo{
     border : solid #D9BB80 1px;
@@ -119,6 +111,9 @@ footer {
     border-radius : 10px;
     text-align : center;
     padding-left :8px;
+}
+.logoFooter > span{
+    margin-bottom : 10px;
 }
 
 .copyright { 
@@ -131,30 +126,127 @@ li ,i{
     color : #D9BB80;
 }
 .massage span {
-    letter-spacing : 5px;
-    margin-bottom : 10px;
-    display : block;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    display : inline-block;
+    width : 100%;
+}
+
+.footerWord {
+    font-size: 15px;
+    letter-spacing: 5px;
+    border-bottom: solid 2px #D9BB80;
+    padding: 0 3px 0px 10px;
+    text-align: left;
+    display: inline-block;
+    margin : auto;
 }
 .mail {
     display : flex;
     align-items : center;
 }
-.mail span{
-    font-size : 15px;
-}
-.mail i {
+.mail{
     font-size : 15px;
 }
 .logoFooter > span {
     display : inline-block;
-
+}
+.sloganDescription {
+    font-size : 10px;
+}
+.sloganDescription a{
+    font-size : 15px;
+}
+.mobileLinks, .quickLinksForMobile,.logoFooterForMobile{
+    display :none;
+}
+.footerForDesktop {
+    display : flex;
+    justify-content :space-around;
 }
 @media screen and (min-width : 320px) and (max-width : 651px){
     .listForMobile { 
         display : inline;
-        font-size : 20px;
+        font-size: 30px;
     }
     .desktop {
         display : none;
+    }
+    .logoFooter {
+        display : none;
+    }
+    .logoFooterForMobile{
+        display : block;
+    }
+    .quickLinksForMobile {
+        display : flex;
+    }
+    .firstRow div{
+        padding : 10px;
+    }
+    .firstRow{
+        padding : 0px;
+    }
+    .footerForDesktop {
+        display :none;
+    }
+    .footerWord {
+        margin : 0 0 10px 0;
+        font-size : 12px;
+        padding : 0;
+        text-align : center;
+    }
+    .mobileLinks {
+        display : flex;
+    }
+    .links{
+        width : 107%;
+        font-size : 15px;
+    }
+    .logoContainerForMobile ,.mail{
+        display :inline-flex; 
+        width : 100%;
+        justify-content : center;
+    }
+    .logoContainerForMobile span ,.logo{
+        border : solid #D9BB80 1px;
+        padding : 5px;
+        border-radius : 10px;
+        text-align : center;
+        padding-left :8px;
+    }
+    .mail {
+        font-size : 15px;
+    }
+    .massage p {
+        margin-top : 10px
+    }
+    .social {
+        width : 40%;
+    }
+    .copyright {
+        font-size : 10px;
+    }
+    .secondRow {
+        padding : 5%;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 357px){
+    .secondRow {
+        padding : 3%;
+    }
+    .social {
+        width : 32%;
+        font-size : 15px;
+    }
+    .copyright {
+        font-size : 10px;
+    }
+    
+}
+@media screen and (min-width : 406px) and (max-width : 651px){
+    .mobileLinks {
+        margin : 0 10%;
     }
 }
