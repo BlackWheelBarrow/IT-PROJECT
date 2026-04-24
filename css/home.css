@@ -25,7 +25,7 @@
     width  :550px;
 }
 .stars {
-    margin : 50px 8%;
+    margin : 70px 8% 80px;
     text-transform : uppercase;
     letter-spacing : 2px;
     font-size : 30px;
@@ -36,7 +36,7 @@
     margin-bottom : 10px;
 }
 .visitors{
-    margin : 50px 8% 20px 8%;
+    margin : 100px 8% 50px 8%;
     text-transform : uppercase;
     color : black;
     letter-spacing: 6px;
@@ -71,7 +71,7 @@
     font-size : 30px;
     margin-left : 20px;
     background-color : rgb(239, 239, 239);
-    padding: 5px 0 5px 8px;
+    padding: 5px 0 5px 10px;
     border-radius : 20px;
 }
 
@@ -88,6 +88,8 @@
         width  :250px;
     }
     .visitors {
+        margin-top : 30px; 
+        margin-bottom : 30px; 
         display : block;
         text-align : center;
     }

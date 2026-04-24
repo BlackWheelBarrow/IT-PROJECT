@@ -49,7 +49,7 @@ header ul li:hover {
 .firstRow {
     display : block;
     width : 100%;
-    padding : 20px 8%;
+    padding : 40px 8%;
     border-top-right-radius : 30px; 
     border-top-left-radius : 30px; 
 }
@@ -61,7 +61,6 @@ header ul li:hover {
 footer {
     margin-top : 20px;
     display : block;
-    
 }
 .social {
     text-align : left;
