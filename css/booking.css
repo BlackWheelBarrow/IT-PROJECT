@@ -1,0 +1,103 @@
+footer{
+    margin-top: 0px;
+}
+.container{
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-image: url("../imgs/booking.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: center;
+}
+.sec {
+    width: 100%;
+    padding : 30px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 50px;
+    font-family: font2;
+    font-weight : 100;
+}
+.booking-form {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 4px 12px black;
+    border-radius: 10px;
+    font-family : font2;
+}
+.booking-form:hover{
+    background: rgb(245, 245, 245);
+    box-shadow: 0 0 20px 2px black;
+}
+input{
+    transition: 0.3s;
+}
+input:hover{
+    transform: scale(1.02);
+}
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+}
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.booking-form p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition : 0.4s;
+}
+.booking-form button:hover {
+    background: #02377c;
+    transform: translateY(-3px);
+}
+.firstRow {
+    border-radius : 0px;
+}
+.mainSection {
+    width : 40%;
+}
+.sloganBooking {
+    text-transform : uppercase;
+    color : white;
+    display : block;
+    padding : 20px 0 2px 0 ;
+    font-size : 40px;
+}
+.underSlogan {
+    text-transform :capitalize;
+    color : rgba(255, 255, 255, 0.587);
+    display : block;
+    font-size : 20px;
+    font-family : font2;
+    font-weight : 100;
+    padding-bottom : 40px;
+}
