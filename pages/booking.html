@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>booking</title>
+        <title>Home</title>
         <link rel="stylesheet" href="../css/core.css">
         <link rel="stylesheet" href="../css/booking.css">
 
@@ -15,8 +15,8 @@
             <div class="logo">HOTEL</div>
             <div class="nav">
                 <ul>
-                    <a href="../index.html"><li class="desktop">home</li></a>
-                    <a href="booking.html"><li class="desktop">booking</li></a>
+                    <a href="../index.html"><li class="active desktop">home</li></a>
+                    <a href="./booking.html"><li class="desktop">booking</li></a>
                     <a href=""><li class="desktop hide">Utilities</li></a>
                     <a href=""><li class="desktop">galary</li></a>
                     <a href=""><li class="desktop">about us</li></a>
@@ -33,39 +33,51 @@
             </div>
         </header>
         <main>
-            <div class="container">
-                <section class="mainSection">
-                    <section class="sec">
-                        Book Your Stay
-                    </section>
-                    <form class="booking-form">
-                        <h2>Reservation Form</h2>
-                        <label for="checkin">Check-in</label>
-                        <input type="date" id="checkin" name="checkin">
-                        <label for="checkout">Check-out</label>
-                        <input type="date" id="checkout" name="checkout">
-                        <label for="guests">Guests</label>
-                        <select id="guests">
-                            <option>1 Guest</option>
-                            <option>2 Guests</option>
-                            <option>3 Guests</option>
-                            <option>4 Guests</option>
+           <section class="window">
+                <span class="booking-title">make a reservation</span>
+                <div class="container">
+                    <form>
+                        <label>choose area</label>
+                        <select>
+                            <option>Mint</option>
+                            <option>Sandra</option>
+                            <option>The Jewel</option>
+                            <option>The Pearl</option>
                         </select>
-                        <label for="room">Room Type</label>
-                        <select id="room">
-                            <option>Single Room</option>
-                            <option>Double Room</option>
-                            <option>Suite</option>
-                        </select>
-                        <p>Total Price: <span id="total">$0</span></p>
-                        <button type="button" onclick="calculatePrice()">Book Now</button>
+                        <div class="form-container1">
+                            <div class="form-cont1-1">
+                                <div>arival date</div>
+                                <input type="date"> 
+                            </div>
+                            <div class="form-cont1-2">
+                                <div># of nights</div>
+                                <input type="number"> 
+                            </div>
+                        </div>
+                        <div class="form-container2">
+                            <div class="form-cont2-1">
+                                <div>rooms</div>
+                                <input type="number"> 
+                            </div>
+                            <div class="form-cont2-2">
+                                <div>adults</div>
+                                <input type="number"> 
+                            </div>
+                            <div class="form-cont2-3">
+                                <div>children</div>
+                                <input type="number"> 
+                            </div>
+                        </div>
+                        <button>Book Now</button>
                     </form>
-                </section>
-                <span class="sloganBooking">
-                    experience ultimate success in velvet luxury
-                </span>
-                <span class="underSlogan">book your place in the Elite area and make a new era of success</span>
-            </div>
+                </div>
+           </section>
+           <h1>
+            experience ultimate success in velvet luxury
+           </h1>
+           <h4>
+            book your place in the Elite area and make a new era of success
+           </h4>
         </main>
         <footer>
             <div class="firstRow">
@@ -86,8 +98,8 @@
                                 <a href="booking.html"><li class="listQuickLinks l2">booking</li></a>
                                 <a href=""><li class="listQuickLinks l3">Utilities</li></a>
                                 <a href=""><li class="listQuickLinks l3">galary</li></a>
-                                <a href="signup.html"><li class="listQuickLinks l4">sign up</li></a>
-                                <a href="login.html"><li class="listQuickLinks l5">log in</li></a>
+                                <a href="./login.html"><li class="listQuickLinks l4">sign up</li></a>
+                                <a href="./signup.html"><li class="listQuickLinks l5">log in</li></a>
                                 <a href=""><li class="listQuickLinks">about us</li></a>
                             </ul>
                         </div>
@@ -108,8 +120,8 @@
                                 <a href="booking.html"><li class="listQuickLinks l2">booking</li></a>
                                 <a href=""><li class="listQuickLinks l3">Utilities</li></a>
                                 <a href=""><li class="listQuickLinks l3">galary</li></a>
-                                <a href="signup.html"><li class="listQuickLinks l4">sign up</li></a>
-                                <a href="login.html"><li class="listQuickLinks l5">log in</li></a>
+                                <a href="./login.html"><li class="listQuickLinks l4">sign up</li></a>
+                                <a href="./signup.html"><li class="listQuickLinks l5">log in</li></a>
                                 <a href=""><li class="listQuickLinks">about us</li></a>
                             </ul>
                         </div>
