@@ -1,1 +1,141 @@
+main {
+    padding: 70px 10%;
+    background-image : url("../imgs/booking.jpeg"); 
+    background-size : cover;
+    background-color : rgba(182, 77, 77, 0.93);
+}
+input,select {
+    padding : 15px;
+}
+input { 
+    display : block;
+    width : 100%;
+    background-color : rgb(238, 238, 238);
+    border : none;
+}
+.container {
+    display : block;
+}
+.window {
+    width : 35%;
+    background-color : white;
+    box-shadow : 0 5px 10px;
+    border-radius : 5px;
+}
+.booking-title {
+    font-size : 25px;
+    text-align : center;
+    padding : 20px;
+    display : block;
+    font-family : font3;
+    font-weight : 100;
+    padding-bottom : 0;
+}
+label {
+    display : block;
+    font-weight : 400px;
+}
+form {
+    font-family : font2;
+    padding : 20px;
+    padding-top : 10px;
+    font-weight : 100;
+}
+select { 
+    width : 100%;
+    display : block;
+    font-size : 15px;
+    background-color : rgb(238, 238, 238);
+    border : none;
+}
+.form-container1,.form-container2 {
+    display : flex;
+    justify-content : space-between;
+    margin-bottom : 10px;
+}
+.form-cont1-1,.form-cont1-2{
+    width : 46%;
+}
+.form-cont1-1 > div,.form-cont1-2 > div,form > label{
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+.form-cont2-1,.form-cont2-2,.form-cont2-3{
+    width : 30%;
+}
+.form-cont2-1 > div,.form-cont2-2 > div,.form-cont2-3 > div,.form-cont1-1 > div,.form-cont1-2 > div,label{
+    color : rgb(110, 110, 110);
+    text-transform :capitalize;
+}
+button {
+    margin-top : 15px;
+    display : block;
+    background-color : #b5975c;
+    color : white;
+    border: none;
+    width :100%;
+    padding : 15px;
+    transition : 0.1s;
+}
+button:hover{
+    margin-top : 15px;
+    display : block;
+    background-color : #4B6F68;
+    color : white;
+}
+h1 {
+    margin-top : 70px;
+    font-size : 35px;
+    font-weight : 100;
+    color : white;
+    font-family : font3;
+    text-transform : uppercase;
+    text-shadow : 3px 3px 5px black;
+}
+h4 {
+    font-size : 15px;
+    font-weight : 100;
+    text-transform :capitalize;
+    font-family : font2;
+    color : rgba(255, 255, 255, 0.6)
+}
+footer {
+    margin-top : 0px;
+}
+.firstRow {
+    border-radius : 0;
+}
 
+@media screen and (max-width : 1111px) {
+    .window {
+        width : 40%;
+    }
+}
+@media screen and (max-width : 850px) {
+    .window{
+        width : 100%;
+    }
+    main{
+        padding : 70px 25%;
+    }
+}
+@media screen and (max-width : 686px) {
+    .window{
+        width : 100%;
+    }
+    main{
+        padding : 70px 20%;
+    }
+}
+
+@media screen and (max-width : 502px) {
+    main{
+        padding : 70px 4%;
+    }
+    .booking-title {
+        font-size : 20px;
+    }
+    input {
+        font-size :  12px;
+    }
+}
