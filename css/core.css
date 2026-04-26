@@ -6,12 +6,16 @@
     font-family : font2;
     src : url("fonts/StackSansHeadline-VariableFont_wght.ttf")
 }
+@font-face{
+    font-family : font3;
+    src : url("fonts/Cinzel-VariableFont_wght.ttf")
+}
 *{
     margin : 0;
     box-sizing:border-box;
 }
 a{
-    color : none ;
+    color  : #D9BB80;
     text-decoration : none;
 }
 header ,.firstRow,.secondRow{
@@ -325,7 +329,7 @@ li ,i{
         font-size : 14px;
     }
 }
-@media screen and (min-width : 651px) and (max-width : 931px){
+@media screen and (min-width : 651px) and (max-width : 1024px){
     .hide {
         display : none;
     }
@@ -335,3 +339,9 @@ li ,i{
         font-size: 30px;
     }
 }
+@media screen and (max-width : 340px){
+    .footerWord {
+        font-size: 11px;
+    }
+}
+

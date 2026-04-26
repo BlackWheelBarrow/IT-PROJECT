@@ -105,12 +105,12 @@ footer {
 .firstRow {
     border-radius : 0;
 }
-
-@media screen and (max-width : 1111px) {
+@media screen and (max-width : 1145px) {
     .window {
-        width : 40%;
+        width : 45%;
     }
 }
+
 @media screen and (max-width : 850px) {
     .window{
         width : 100%;
