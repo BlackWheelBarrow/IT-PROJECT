@@ -10,6 +10,12 @@
     font-family : font3;
     src : url("fonts/Cinzel-VariableFont_wght.ttf")
 }
+.logoFooterForMobile{
+    background-color : #4B6F68;
+    color  : #D9BB80;
+    padding : 10px;
+    letter-spacing : 3px;
+}
 *{
     margin : 0;
     box-sizing:border-box;
