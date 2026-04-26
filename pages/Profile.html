@@ -3,7 +3,7 @@
     <head>
         <title>Home</title>
         <link rel="stylesheet" href="../css/core.css">
-        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/profile.css">
 
         <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
         <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
@@ -15,12 +15,12 @@
             <div class="logo">HOTEL</div>
             <div class="nav">
                 <ul>
-                    <a href="../index.html"><li class="active desktop">home</li></a>
+                    <a href="../index.html"><li class="desktop">home</li></a>
                     <a href="./booking.html"><li class="desktop">booking</li></a>
                     <a href=""><li class="desktop hide">Utilities</li></a>
                     <a href=""><li class="desktop">galary</li></a>
                     <a href=""><li class="desktop hide">about us</li></a>
-                    <a href="./Profile.html"><li class="desktop">Profile</li></a>
+                    <a href=""><li class="active desktop">Profile</li></a>
                     <div class="theme">
                         <img src="../imgs/sun.png" class="src">
                         <img src="../imgs/moon.png" class="src">
@@ -33,25 +33,36 @@
                 </ul>
             </div>
         </header>
+        <div class="banner"></div>
         <main>
-           <div class="login">
-                <div class="loginW">
-                    <span>login</span>
-                    <form>
-                        <label class="inputLabels">E-mail</label>
-                        <input type="mail">
-                        <label class="inputLabels">Password</label>
-                        <input type="password">
-                        <span>
-                            don't have an account ? 
-                            <a href="signup.html" style="color :#508b7f">create one</a>
-                        </span><br>
-                        <!-- <a href="" style="color :#508b7f">forget the password</a>-->
-                        <button style="display : block;">Login</button>
-                    </form>
-
-                </div>            
-                <div class="loginImg">
+            <div class="profile">
+                <div class="profileW">
+                    <span>my profile</span>
+                    <div class="container">
+                        <div class="img-info">
+                            <img class="img" src="../imgs/user.png">
+                            <div class="info">
+                                <table>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td class="an-input">User Name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td class="an-input">name@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number</td>
+                                        <td class="an-input">+23 221 000 11</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help">
+                        Need Any Help ?
+                        <a href="./contactus.html">Contact us</a>
+                    </div>
                 </div>            
            </div>
         </main>
@@ -92,7 +103,6 @@
                 <div class="mobileLinks">
                     <div class="links">
                         <span class="footerWord">QUICK LINKS</span>
-                            <ul>
                             <ul>
                                 <a href="../index.html"><li class="listQuickLinks l1">home</li></a>
                                 <a href="booking.html"><li class="listQuickLinks l2">booking</li></a>
