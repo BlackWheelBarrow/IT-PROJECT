@@ -1,0 +1,66 @@
+.container {
+    margin : 20px 15%; 
+}
+.banner{
+    background-size : cover;
+    background-image : url("../imgs/aboutus.png");
+    height: 150px;
+}
+
+h1{
+    margin-top: 25px;
+    text-align :center;
+    font-family : font3;
+    display : inline-block ;
+    width : 25%;
+    margin-left : 37.5%;
+    border-radius : 15px;
+    border-bottom  : solid 2px #4B6F68;
+}
+.text p , .text ul {
+    padding : 15px;
+}
+.title1 {
+    font-family : font3;
+}
+.text {
+    font-weight : 200;
+    font-family : font2;
+    background-color : rgb(238, 238, 238);
+    border-left  : solid 5px #4B6F68;
+    border-radius : 15px;
+    padding : 20px;
+    margin-bottom : 30px;
+    text-transform : capitalize;
+}
+
+ul li {
+  color: black;
+}
+@media screen and (max-width : 856px){
+    h1{
+        font-size: 25px;
+        width : 30%;
+        margin-left : 35%;
+    }
+}
+@media screen and (max-width : 550px){
+    h1{
+        font-size: 20px;
+        width : 30%;
+        margin-left : 35%;
+    }
+}
+@media screen and (max-width : 396px){
+    h1{
+        font-size: 25px;
+        width : 50%;
+        margin-left : 25%;
+    }
+    .title1 {
+        font-size : 20px;
+    }
+    .container {
+        margin : 20px 5%; 
+    }
+}
