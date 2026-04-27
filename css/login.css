@@ -26,7 +26,7 @@ form , form input,form label{
     display : block;
 }
 .loginImg {
-    background-image : url("../imgs/loginImage.png");
+    background-image : url("../imgs/loginImage.jpg");
     background-size : cover;
     width : 50%;
 }
