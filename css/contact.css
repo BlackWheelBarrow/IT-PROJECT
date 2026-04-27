@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.window{
+    background-image: url(../imgs/contact.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+label { 
+    font-family : font2;
+    font-weight : 200;
+}
+.container{
+    background-color  :rgba(82, 82, 82, 0.37);
+    padding : 50px 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content : space-between;
+}
+.text h1{
+    width : 100%;
+    color: white;
+    font-size: 45px;
+    text-shadow: 3px 3px 20px black;
+    font-family : font3;
+}
+.user{
+    padding: 35px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 5px;
+    transition: 0.05s;
+    width : 50%;
+}
+.user:hover{
+    box-shadow: 0 0 25px 2px black;
+}
+.user form{
+    display: flex;
+    flex-direction: column;
+}
+.user label{
+    margin: 10px 5px;
+    font-size: 15px;
+}
+.user input{
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(238, 238, 238);
+}
+.user input:hover,.user textarea:hover{
+    transform: scale(1.02);
+}
+.user textarea{
+    height: 100px;
+    padding: 10px;
+    border : none;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    resize : none;
+    overflow : scroll;
+    overflow-x : hidden;
+}
+.user button{
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #cbaa69;
+    cursor: pointer;
+    transition: 0.3s;
+    border : none;
+    color : white
+}
+.user button:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 5px 20px  #77633c inset;
+}
+footer {
+    margin-top : 0px;
+}
+.firstRow {
+    border-radius : 0px;
+}
+@media screen and (max-width : 836px ){
+    .container{
+        padding : 50px 7%;
+    }
+}  
+@media screen and (max-width : 756px ){
+    .container{
+        padding : 50px 4%;
+    }
+}   
+@media screen and (max-width : 698px ){
+    .container{
+        padding : 50px 15%;
+        display: block;
+    }
+    .text h1 {
+        text-align : center;
+    }
+    .user { 
+        width : 100%;
+        margin-top : 10px;
+    }
+}   
+@media screen and (max-width : 500px ){
+    .container{
+        padding : 50px 6%;
+    }
+    .user { 
+        width : 100%;
+        padding : 20px;
+    }
+}
