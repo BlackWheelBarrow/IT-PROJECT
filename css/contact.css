@@ -3,7 +3,7 @@
     padding: 0;
 }
 .window{
-    background-image: url(../imgs/contact.jpeg);
+    background-image: url("../imgs/homeHotelPage.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
