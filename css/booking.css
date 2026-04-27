@@ -2,7 +2,6 @@ main {
     padding: 70px 10%;
     background-image : url("../imgs/booking.jpeg"); 
     background-size : cover;
-    background-color : rgba(182, 77, 77, 0.93);
 }
 input,select {
     padding : 15px;
