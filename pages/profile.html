@@ -4,6 +4,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="../css/core.css">
         <link rel="stylesheet" href="../css/profile.css">
+        <link rel="stylesheet" id="theme">
 
         <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
         <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
@@ -22,8 +23,8 @@
                     <a href="./aboutus.html"><li class="desktop hide">about us</li></a>
                     <a href="./Profile.html"><li class="active desktop">Profile</li></a>
                     <div class="theme">
-                        <img src="../imgs/sun.png" class="src">
-                        <img src="../imgs/moon.png" class="src">
+                        <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
                     </div>
                     <a href="listForMobile">
                         <li class="listForMobile">
@@ -44,15 +45,15 @@
                             <div class="info">
                                 <table>
                                     <tr>
-                                        <td>Name</td>
+                                        <td class="dark-profile-td">Name</td>
                                         <td class="an-input">User Name</td>
                                     </tr>
                                     <tr>
-                                        <td>E-mail</td>
+                                        <td class="dark-profile-td">E-mail</td>
                                         <td class="an-input">name@mail.com</td>
                                     </tr>
                                     <tr>
-                                        <td>Phone Number</td>
+                                        <td class="dark-profile-td">Phone Number</td>
                                         <td class="an-input">+23 221 000 11</td>
                                     </tr>
                                 </table>
@@ -144,5 +145,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../js/otherCore.js"></script>
     </body>
 </html>
