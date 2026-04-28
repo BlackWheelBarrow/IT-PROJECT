@@ -35,7 +35,8 @@ form , form input,form label{
     display : block;
     font-size : 20px;
 }
-form input:nth-child(4),form input:nth-child(2),form input:nth-child(6){ 
+form input:nth-child(4),form input:nth-child(2),form input:nth-child(6),
+input:nth-child(8),input:nth-child(10){ 
     padding : 10px;
     border-radius : 10px;
     border : solid #508b7f 1px;

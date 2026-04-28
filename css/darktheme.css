@@ -78,7 +78,7 @@ h1 {
 h2 ,ul li{
     color : #cecece;
 }
-.text {
+.Text {
     font-weight: 200;
     color : #cecece;
     font-family: font2;
@@ -88,6 +88,53 @@ h2 ,ul li{
     padding: 20px;
     margin-bottom: 30px;
     text-transform: capitalize;
+}
+.Contact-title {
+    background-color: rgba(128, 128, 128, 0);
+    border : none;
+    border-radius: 0;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.window {
+    background-image : url("../imgs/homedark.jpg")
+}
+.user button {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: rgb(45, 58, 78);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    color: white;
+}
+.loginW ,.signupW ,.profileW{
+    background-color: rgb(47, 66, 92);
+}
+.loginW  span ,.signupW  span {
+    color: #ececec;
+}
+.loginW  a  , .signupW a{
+    color: #D9BB80 !important;
+}
+.inputLabels {
+    color: #ececec;
+}
+.loginImg {
+    background-image: url(../imgs/loginImagedark.jpg);
+}
+.signImg {
+    background-image: url(../imgs/signupdark.jpg);
+}
+.profileW > span {
+    color : rgb(215, 215, 215);
+    border-bottom : 1px solid rgb(215, 215, 215);
+}
+.dark-profile-td {
+    color : rgb(215, 215, 215);
+}.help {
+    color : rgb(215, 215, 215);
 }
 @media screen and (min-width : 320px) and (max-width : 737px){
     .theme {

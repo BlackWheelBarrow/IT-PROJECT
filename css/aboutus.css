@@ -17,13 +17,13 @@ h1{
     border-radius : 15px;
     border-bottom  : solid 2px #4B6F68;
 }
-.text p , .text ul {
+.Text p , .Text ul {
     padding : 15px;
 }
 .title1 {
     font-family : font3;
 }
-.text {
+.Text {
     font-weight : 200;
     font-family : font2;
     background-color : rgb(238, 238, 238);
