@@ -1,0 +1,61 @@
+header, .firstRow ,.logoFooterForMobile{
+    background-color: rgb(45, 58, 78);
+    padding: 20px 7%;
+    color: #D9BB80;
+}
+.secondRow {
+    background-color: rgb(27, 35, 48);
+}
+#lightBtn {
+    display : inline; 
+}
+#darkBtn {
+    display :none; 
+}
+.theme {
+    display: inline;
+    padding: 10px;
+    background-color: #91743a;
+    border-radius: 4px;
+}
+body {
+    background-color : rgb(47, 49, 70);
+}
+.hotelImage {
+    background-image: url(../imgs/homedark.jpg);
+}
+.welcomeSection {
+    background-color: rgba(0, 0, 0, 0.408);
+}
+.logIn, .signUp
+{
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(217, 187, 128);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background-color: rgb(45, 58, 78);
+    font-family: "Times New Roman";
+    border-width: medium;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: initial;
+}
+.visitors h2 {
+    color : #cecece;
+    border-bottom: #525252 solid 3px;
+}
+.visitors h3 {
+    color: rgb(217, 187, 128);
+    border-bottom: none;
+    background-color: rgb(45, 58, 78);
+    border-left: #525252 solid 3px;
+}
+.stars span {
+    color : #cecece;
+}
+.starsIcon {
+    background-color: rgb(45, 58, 78);
+}
