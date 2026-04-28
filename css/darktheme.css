@@ -68,6 +68,27 @@ button {
 button:hover {
     background-color: rgb(26, 37, 55);
 }
+.banner-aboutus{
+    background-image: url("../imgs/darkaboutus.jpg");
+}
+h1 {
+    color : #cecece;
+    border-bottom: solid 2px #cecece;
+}
+h2 ,ul li{
+    color : #cecece;
+}
+.text {
+    font-weight: 200;
+    color : #cecece;
+    font-family: font2;
+    background-color: rgb(50, 65, 86);
+    border-left: solid 5px #4f4f4f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
 @media screen and (min-width : 320px) and (max-width : 737px){
     .theme {
         display : none; 
