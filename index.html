@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/core.css">
-
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" id="theme">
+        
         <link rel="stylesheet" href="css/regular-lineicons/lineicons-free.css">
         <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 
@@ -22,8 +23,8 @@
                     <a href=""><li class="desktop hide">about us</li></a>
                     <a href="./pages/Profile.html"><li class="desktop">Profile</li></a>
                     <div class="theme">
-                        <img src="imgs/sun.png" class="src">
-                        <img src="imgs/moon.png" class="src">
+                        <img src="imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
                     </div>
                     <a href="listForMobile">
                         <li class="listForMobile">
@@ -152,5 +153,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/core.js"></script>
     </body>
 </html>
