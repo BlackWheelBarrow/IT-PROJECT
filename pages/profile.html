@@ -11,7 +11,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="profileUpdate()">
         <header>
             <div class="logo">HOTEL</div>
             <div class="nav">
@@ -46,11 +46,11 @@
                                 <table>
                                     <tr>
                                         <td class="dark-profile-td">Name</td>
-                                        <td class="an-input">User Name</td>
+                                        <td id ="uname"class="an-input">User Name</td>
                                     </tr>
                                     <tr>
                                         <td class="dark-profile-td">E-mail</td>
-                                        <td class="an-input">name@mail.com</td>
+                                        <td id ="uemail"class="an-input">name@mail.com</td>
                                     </tr>
                                     <tr>
                                         <td class="dark-profile-td">Phone Number</td>
@@ -145,6 +145,6 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/otherCore.js"></script>
+        <script src="../js/Core.js"></script>
     </body>
 </html>
