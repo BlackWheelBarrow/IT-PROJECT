@@ -39,7 +39,13 @@
            <section class="window">
                 <span class="booking-title">make a reservation</span>
                 <div class="container">
-                    <form>
+                    <form method="post" id="ziad">
+                        <div class="">
+                            <label for="firstname">First Name</label>
+                            <input id="firstName" type="name" onchange="fnameCheck()"> 
+                            <label for="secondname">second Name</label>
+                            <input id="lastName" type="name" onchange="lnameCheck()"> 
+                        </div>
                         <label for="area">choose area</label>
                         <select id="area">
                             <option>Mint</option>
@@ -54,24 +60,27 @@
                             </div>
                             <div class="form-cont1-2">
                                 <label for="noOFNights"># of nights</label>
-                                <input id="noOFNights" type="number"> 
+                                <input id="noOFNights" type="number" onchange="numNightsCheck()"> 
                             </div>
                         </div>
                         <div class="form-container2">
                             <div class="form-cont2-1">
                                 <label for="rooms" >rooms</label>
-                                <input id="rooms" type="number"> 
+                                <input id="rooms" type="number " onchange="numRoomsCheck()" > 
                             </div>
                             <div class="form-cont2-2">
                                 <label for="adults" >adults</label>
-                                <input id="adults" type="number"> 
+                                <input id="adults" type="number" onchange="numAdultsCheck()"> 
                             </div>
                             <div class="form-cont2-3">
-                                <label for="childern" >children</label>
-                                <input id="childern" type="number"> 
+                                <label for="children" >children</label>
+                                <input id="children" type="number" onchange="numChildsCheck()"> 
                             </div>
                         </div>
-                        <button>Book Now</button>
+                        <div id="bookingAlerts">
+
+                        </div>
+                        <button id="submit" type="button" onclick="checkSubmit()">Book Now</button>
                     </form>
                 </div>
            </section>
@@ -162,6 +171,7 @@
                 </div>
             </div>
         </footer>
+        <script src="../js/bookingValidation.js"></script>
         <script src="../js/otherCore.js"></script>
     </body>
 </html>
