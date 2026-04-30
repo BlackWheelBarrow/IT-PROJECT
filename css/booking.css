@@ -3,6 +3,13 @@ main {
     background-image : url("../imgs/booking.jpeg"); 
     background-size : cover;
 }
+.big-container-booking{
+    display : flex;
+    width : 100%;
+    flex-direction :column;
+    gap : 30px;
+}
+
 input,select {
     padding : 15px;
 }
@@ -83,7 +90,6 @@ button:hover{
     color : white;
 }
 h1 {
-    margin-top : 70px;
     font-size : 35px;
     font-weight : 100;
     color : white;

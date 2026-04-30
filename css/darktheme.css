@@ -43,9 +43,18 @@ body {
     border-color: currentcolor;
     border-image: initial;
 }
+.visitors {
+    display: block;
+    text-align : center;
+    width : 60%;
+    margin-left : 20%; 
+}
 .visitors h2 {
     color : #cecece;
-    border-bottom: #525252 solid 3px;
+    border: #525252 solid 3px;
+    padding : 10px;
+    display : block;
+    margin-bottom : 20px;
 }
 .visitors h3 {
     color: rgb(217, 187, 128);
@@ -127,6 +136,22 @@ h2 ,ul li{
 .signImg {
     background-image: url(../imgs/signupdark.jpg);
 }
+.banner {
+    width : 100%;
+    background-image : url("../imgs/profiledark.jpg");
+    background-size : cover;
+    height : 200px;
+}
+.window-dark{
+    background-image: url("../imgs/contactusdark.jpg");
+}
+.window-dark div {
+    flex-direction :column;
+    gap : 30px;
+}
+.login ,.signup{
+    flex-direction: row-reverse;
+}
 .profileW > span {
     color : rgb(215, 215, 215);
     border-bottom : 1px solid rgb(215, 215, 215);
@@ -135,6 +160,17 @@ h2 ,ul li{
     color : rgb(215, 215, 215);
 }.help {
     color : rgb(215, 215, 215);
+}
+.welcomeSection {
+    text-align: center;
+}
+.btnsLS {
+    justify-content : center; 
+}
+.big-container-booking{
+    display : flex;
+    width : 100%;
+    flex-direction :column-reverse;
 }
 @media screen and (min-width : 320px) and (max-width : 737px){
     .theme {
