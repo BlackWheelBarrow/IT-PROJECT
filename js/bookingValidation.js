@@ -1,4 +1,5 @@
 let alertWindow = document.getElementById("bookingAlerts");
+let success = document.getElementById("success");
 let submitButton = document.getElementById("submit");
 let canSubmit = -1;
 
@@ -10,15 +11,18 @@ msgs[1] = document.createElement("h6");
 msgs[2] = document.createElement("h6");
 msgs[3] = document.createElement("h6");
 msgs[4] = document.createElement("h6");
+msgs[5] = document.createElement("h6");
 
 msgs[0].style.cssText = `padding : 2px 5px;`;
 msgs[1].style.cssText = `padding : 2px 5px;`;
-msgs[2].style.cssText = `padding : 2px 5px;`;
-msgs[3].style.cssText = `padding : 2px 5px;`;
-msgs[4].style.cssText = `padding : 2px 5px;`;
-
+msgs[2].style.cssText = `padding : 2px 5px;`; // completed
+msgs[3].style.cssText = `padding : 2px 5px;`; // first name
+msgs[4].style.cssText = `padding : 2px 5px;`; // last name
+msgs[5].style.cssText = `padding : 2px 5px;`; // email
+ 
 let firstName = "nothing";
 let lastName = "nothing";
+let mail = "";
 let noOfNights = 0;
 let noOfRooms = 0;
 let noOfAdults = 0;
@@ -30,6 +34,20 @@ let humanCounter = 0;
 
 let noOFExpectedRooms = (MaxHumanPerRoom * noOfRooms);
 
+function mailCheck(){
+    mail = document.getElementById("mail").value;
+    if(!(mail.includes("@") ) ||
+       !(mail.includes(".") ) 
+    ){
+        msgs[5].innerText = "invaild e-mail";
+        msgs[5].style.display = "block";
+        alertWindow.append(msgs[5]);
+        canSubmit = -1;
+    }else {
+        msgs[5].style.display = "none";
+        canSubmit = 1;
+    }
+}
 function fnameCheck(){
     firstName = document.getElementById("firstName").value;
     if(isNaN(firstName)){
@@ -95,8 +113,9 @@ function lnameCheck(){
 
 function checkSubmit(){
     if(canSubmit == 1){
-        document.getElementById("ziad").requestSubmit();
-                                    // ^^^^^^^^^^^^^^^^  by the help of AI
+        msgs[2].innerText = "we will send an e-mail to confirm the booking within 10 - 20 minuts";
+        msgs[2].style.display = "block";
+        success.append(msgs[2]);
     }
 }
 
