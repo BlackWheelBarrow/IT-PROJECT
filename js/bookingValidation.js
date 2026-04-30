@@ -12,6 +12,7 @@ msgs[2] = document.createElement("h6");
 msgs[3] = document.createElement("h6");
 msgs[4] = document.createElement("h6");
 msgs[5] = document.createElement("h6");
+msgs[6] = document.createElement("h6");
 
 msgs[0].style.cssText = `padding : 2px 5px;`;
 msgs[1].style.cssText = `padding : 2px 5px;`;
@@ -19,6 +20,7 @@ msgs[2].style.cssText = `padding : 2px 5px;`; // completed
 msgs[3].style.cssText = `padding : 2px 5px;`; // first name
 msgs[4].style.cssText = `padding : 2px 5px;`; // last name
 msgs[5].style.cssText = `padding : 2px 5px;`; // email
+msgs[6].style.cssText = `padding : 2px 5px;`; // email
  
 let firstName = "nothing";
 let lastName = "nothing";
@@ -29,16 +31,12 @@ let noOfAdults = 0;
 let noOfChilds = 0;
 
 let MaxHumanPerRoom = 2;
-
 let humanCounter = 0;
-
 let noOFExpectedRooms = (MaxHumanPerRoom * noOfRooms);
 
 function mailCheck(){
     mail = document.getElementById("mail").value;
-    if(!(mail.includes("@") ) ||
-       !(mail.includes(".") ) 
-    ){
+    if( !(mail.includes("@")) || !(mail.includes(".")) ){
         msgs[5].innerText = "invaild e-mail";
         msgs[5].style.display = "block";
         alertWindow.append(msgs[5]);
@@ -141,13 +139,20 @@ function numRoomsCheck(){
     noOFExpectedRooms = (MaxHumanPerRoom * noOfRooms);
     
     if(
-        (noOfAdults == 0 && noOfChilds == 0) ||
+        (noOfAdults == 0 && noOfChilds == 0 && noOfRooms > 0) ||
         (noOfAdults != 0 && noOfChilds == 0) ||
         (noOfAdults == 0 && noOfChilds != 0) ||
-        (noOfAdults != 0 && noOfChilds != 0 && noOfRooms == 0) 
+        (noOfAdults != 0 && noOfChilds != 0 && noOfChilds == 0) 
         
     ){
-        
+        msgs[1].style.display = "none";
+        canSubmit = 1;
+    }
+    else if(noOfRooms < 0 ){
+        canSubmit = -1;
+        msgs[1].innerText = `Number of rooms should be greater than zero`;
+        msgs[1].style.display = "block";
+        alertWindow.append(msgs[1]);
     }
     else if(noOFExpectedRooms <  noOfChilds + noOfAdults){
         msgs[1].innerText = `number of indvisuals is more than the capacity of rooms - Max is ${noOFExpectedRooms}`;
@@ -160,14 +165,30 @@ function numRoomsCheck(){
         msgs[1].style.display = "block";
         alertWindow.append(msgs[1]);
     }
-    else {
-        msgs[1].style.display = "none";
-        canSubmit = 1;
-    }
 }
 function numChildsCheck(){
     numRoomsCheck();
+    if(noOfChilds < 0 ){
+        canSubmit = -1;
+        msgs[2].innerText = `Number of children should be greater than zero`;
+        msgs[2].style.display = "block";
+        alertWindow.append(msgs[2]);
+    }else {
+        msgs[2].style.display = "none";
+        canSubmit = 1;
+        
+    }
 }
 function numAdultsCheck(){
     numRoomsCheck();
+    if(noOfAdults < 0 ){
+        canSubmit = -1;
+        msgs[6].innerText = `Number of ِadults should be greater than zero`;
+        msgs[6].style.display = "block";
+        alertWindow.append(msgs[6]);
+    }else {
+        msgs[6].style.display = "none";
+        canSubmit = 1;
+        
+    }
 }
