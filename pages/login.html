@@ -15,27 +15,33 @@
         <header>
             <div class="logo">HOTEL</div>
             <div class="nav">
-                 <ul>
-                    <a href="../index.html"><li class="desktop">home</li></a>
-                    <a href="./booking.html"><li class="desktop">booking</li></a>
-                    <a href=""><li class="desktop hide">Utilities</li></a>
-                    <a href=""><li class="desktop">gallery</li></a>
-                    <a href="./aboutus.html"><li class="desktop hide">about us</li></a>
-                    <a href="./Profile.html"><li class="desktop">Profile</li></a>
+                <ul>
+                    <a href="../index.html">
+                    <li class="desktop">home</li></a>
+                    <a href="./booking.html">
+                    <li class="desktop">booking</li></a>
+                    <a href="">
+                    <li class="desktop hide">Utilities</li></a>
+                    <a href="">
+                    <li class="desktop">gallery</li></a>
+                    <a href="./aboutus.html">
+                    <li class="desktop hide">about us</li></a>
+                    <a href="./Profile.html">
+                    <li class="desktop">Profile</li></a>
                     <div class="theme">
                         <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
                         <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
                     </div>
                     <a href="listForMobile">
-                        <li class="listForMobile">
-                            <i class="lni lni-menu-hamburger-1"></i>
-                        </li>
+                    <li class="listForMobile">
+                        <i class="lni lni-menu-hamburger-1"></i>
+                    </li>
                     </a>
                 </ul>
             </div>
         </header>
         <main>
-           <div class="login">
+            <div class="login">
                 <div class="loginW">
                     <span>login</span>
                     <form>
@@ -44,17 +50,17 @@
                         <label for="enteredPassword" class="inputLabels">Password</label>
                         <input id="enteredPassword" type="password">
                         <span>
-                            don't have an account ? 
+                            don't have an account ?
                             <a href="signup.html" style="color :#508b7f">create one</a>
                         </span><br>
                         <!-- <a href="" style="color :#508b7f">forget the password</a>-->
-                        <button style="display : block;">Login</button>
+                        <button style="display : block;" type="button" onclick="login(document.getElementById('enteredMail').value,document.getElementById('enteredPassword').value)">Login</button>
                     </form>
 
-                </div>            
+                </div>
                 <div class="loginImg">
-                </div>            
-           </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="firstRow">
@@ -71,15 +77,24 @@
                         <div class="footerWord">QUICK LINKS</div>
                         <div class="links">
                             <ul>
-                                <a href="../index.html"><li class="listQuickLinks l1">home</li></a>
-                                <a href="./booking.html"><li class="listQuickLinks l2">booking</li></a>
-                                <a href="./profile.html"><li class="listQuickLinks l3">Profile</li></a>
-                                <a href=""><li class="listQuickLinks l3">Utilities</li></a>
-                                <a href=""><li class="listQuickLinks l3">gallery</li></a>
-                                <a href="./signup.html"><li class="listQuickLinks l4">sign up</li></a>
-                                <a href="./login.html"><li class="listQuickLinks l5">log in</li></a>
-                                <a href="./aboutus.html"><li class="listQuickLinks">about us</li></a>
-                                <a href="./contact.html"><li class="listQuickLinks">Contact us</li></a>
+                                <a href="../index.html">
+                                <li class="listQuickLinks l1">home</li></a>
+                                <a href="./booking.html">
+                                <li class="listQuickLinks l2">booking</li></a>
+                                <a href="./profile.html">
+                                <li class="listQuickLinks l3">Profile</li></a>
+                                <a href="">
+                                <li class="listQuickLinks l3">Utilities</li></a>
+                                <a href="">
+                                <li class="listQuickLinks l3">gallery</li></a>
+                                <a href="./signup.html">
+                                <li class="listQuickLinks l4">sign up</li></a>
+                                <a href="./login.html">
+                                <li class="listQuickLinks l5">log in</li></a>
+                                <a href="./aboutus.html">
+                                <li class="listQuickLinks">about us</li></a>
+                                <a href="./contact.html">
+                                <li class="listQuickLinks">Contact us</li></a>
                             </ul>
                         </div>
                     </div>
@@ -94,24 +109,35 @@
                 <div class="mobileLinks">
                     <div class="links">
                         <span class="footerWord">QUICK LINKS</span>
+                        <ul>
                             <ul>
-                            <ul>
-                                <a href="../index.html"><li class="listQuickLinks l1">home</li></a>
-                                <a href="./booking.html"><li class="listQuickLinks l2">booking</li></a>
-                                <a href="./profile.html"><li class="listQuickLinks l3">Profile</li></a>
-                                <a href=""><li class="listQuickLinks l3">Utilities</li></a>
-                                <a href=""><li class="listQuickLinks l3">gallery</li></a>
-                                <a href="./signup.html"><li class="listQuickLinks l4">sign up</li></a>
-                                <a href="./login.html"><li class="listQuickLinks l5">log in</li></a>
-                                <a href="./aboutus.html"><li class="listQuickLinks">about us</li></a>
-                                <a href="./contact.html"><li class="listQuickLinks">Contact us</li></a>
+                                <a href="../index.html">
+                                <li class="listQuickLinks l1">home</li></a>
+                                <a href="./booking.html">
+                                <li class="listQuickLinks l2">booking</li></a>
+                                <a href="./profile.html">
+                                <li class="listQuickLinks l3">Profile</li></a>
+                                <a href="">
+                                <li class="listQuickLinks l3">Utilities</li></a>
+                                <a href="">
+                                <li class="listQuickLinks l3">gallery</li></a>
+                                <a href="./signup.html">
+                                <li class="listQuickLinks l4">sign up</li></a>
+                                <a href="./login.html">
+                                <li class="listQuickLinks l5">log in</li></a>
+                                <a href="./aboutus.html">
+                                <li class="listQuickLinks">about us</li></a>
+                                <a href="./contact.html">
+                                <li class="listQuickLinks">Contact us</li></a>
                             </ul>
-                        </div>
-                        <div class="massage">
-                            <span class="footerWord">OUR SLOGAN</span>
-                            <p>Elite service for the
-                            Elite People</p>
-                        </div>
+                    </div>
+                    <div class="massage">
+                        <span class="footerWord">OUR SLOGAN</span>
+                        <p>
+                            Elite service for the
+                            Elite People
+                        </p>
+                    </div>
                 </div>
                 <div class="logoFooterForMobile">
                     <div class="logoContainerForMobile">
@@ -125,16 +151,21 @@
             </div>
             <div class="secondRow">
                 <div class="social">
-                    <a href=""><i class="lni lni-linkedin"></i>
-                    <a href=""><i class="lni lni-facebook"></i>
-                    <a href=""><i class="lni lni-instagram"></i>
-                    <a href=""><i class="lni lni-youtube"></i>
+                    <a href="">
+                        <i class="lni lni-linkedin"></i>
+                        <a href="">
+                            <i class="lni lni-facebook"></i>
+                            <a href="">
+                                <i class="lni lni-instagram"></i>
+                                <a href=""><i class="lni lni-youtube"></i>
                 </div>
                 <div class="copyright">
                     &copy; 2026 COPYRIGHT RESERVED
                 </div>
             </div>
         </footer>
-        <script src="../js/otherCore.js"></script>
+  
+        <script src="../js/Core.js"></script>
+
     </body>
 </html>
