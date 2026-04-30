@@ -116,7 +116,13 @@ footer {
         width : 45%;
     }
 }
-
+#bookingAlerts {
+    background-color : rgb(190, 101, 101);
+    font-family : font2;
+    color : white;
+    transition : 0.3s;
+    border-radius : 5px;
+}
 @media screen and (max-width : 850px) {
     .window{
         width : 100%;
