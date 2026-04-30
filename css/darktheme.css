@@ -172,6 +172,9 @@ h2 ,ul li{
     width : 100%;
     flex-direction :column-reverse;
 }
+.banner-aboutus {
+    background-image : url("../imgs/darkaboutus.jpg")
+}
 @media screen and (min-width : 320px) and (max-width : 737px){
     .theme {
         display : none; 
