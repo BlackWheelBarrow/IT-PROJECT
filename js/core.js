@@ -7,45 +7,48 @@ function darkTheme(){
 }
 
 
+const users = JSON.parse(localStorage.getItem('users')) || {};
+function signup(name, email, password, confirmpass, number) {
+        if (!name || !email || !password || !confirmpass || !number) {
+            window.alert("all fields are required");
+        }
+        else if (users[email]) {
+            window.alert("email already exists");
+        }
+        else if (password === confirmpass) {
+            users[email] = {
+                name: name,
+                email: email,
+                number: number,
+                password: password,
+            };
+            localStorage.setItem('users', JSON.stringify(users));
+            localStorage.setItem('currentuser', JSON.stringify(users[email]));
+            window.location.href = "profile.html";
+        }
 
-let users = JSON.parse(localStorage.getItem('users')) || {};
+    }
 
 
-function signup(name, email, password, confirmpass) {
-    if (!name || !password || !email || !confirmpass) {
-        window.alert("all fields are required");
-    }
-    else if (users[email]) {
-        window.alert("email already exists");
-    }
-    else if (password === confirmpass) {
-        users[email] = {
-            email: email,
-            password: password,
-            name: name,
-        };
-        localStorage.setItem('currentuser', JSON.stringify(users[email]));
-        localStorage.setItem('users', JSON.stringify(users));
-        window.location.href = "profile.html";
-        window.alert("done");
-    }
-}
 function login(email, password) {
-    if (!email || !password) {
-        window.alert("email and password are required");
-    }
-    else if (users[email] && users[email].password === password) {
-        localStorage.setItem('currentuser', JSON.stringify(users[email]));
-        window.location.href = "profile.html";
-    }
-    else {
-        window.alert("Wrong username or password");
-    }
-}
+        if (!email || !password) {
+            window.alert("both fields are required");
+        }
+        else if (users[email] && users[email].password === password) {
+            localStorage.setItem('currentuser', JSON.stringify(users[email]));
+            window.location.href = "profile.html";
+        }
+        else {
+            window.alert("wrong email or password");
+        }
 
+
+
+    }
 
 function profileUpdate() {
     const currentuser = JSON.parse(localStorage.getItem('currentuser'));
-    document.getElementById("uname").innerHTML = currentuser.name;
     document.getElementById("uemail").innerHTML = currentuser.email;
+    document.getElementById("uname").innerHTML = currentuser.name;
+    document.getElementById("unum").innerHTML = currentuser.number;
 }
