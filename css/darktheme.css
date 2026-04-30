@@ -175,6 +175,17 @@ h2 ,ul li{
 .banner-aboutus {
     background-image : url("../imgs/darkaboutus.jpg")
 }
+.signout-btn {
+    padding : 10px 20px;;
+    border : none ;
+    background-color : #1944a9;
+    color  : white;
+    border-radius : 10px;
+    transition : 0.3s
+}
+.signout-btn:hover{
+    background-color : #162421;
+}
 @media screen and (min-width : 320px) and (max-width : 737px){
     .theme {
         display : none; 

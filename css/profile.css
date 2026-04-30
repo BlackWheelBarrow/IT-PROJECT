@@ -82,6 +82,22 @@ td  {
 .help a:hover {
     text-decoration : underline;
 }
+.signout-cont {
+    padding : 0 7%;
+    display : flex ;
+    justify-content : space-between;
+}
+.signout-btn {
+    padding : 10px 20px;;
+    border : none ;
+    background-color : #4B6F68;
+    color  : white;
+    border-radius : 10px;
+    transition : 0.3s
+}
+.signout-btn:hover{
+    background-color : #162421;
+}
 @media screen and (max-width : 1100px){
     .profileW > span {
         font-size: 25px;
@@ -90,7 +106,7 @@ td  {
         font-size : 15px;
         min-width : 130px;
     }
-  
+    
 }
 @media screen and (max-width : 772px){
     .profileW > span {
@@ -150,4 +166,29 @@ td  {
         font-size : 13px;
         min-width : 120px;
     }
+}
+@media screen and (min-width : 350px) and (max-width : 860px){
+    .signout-cont {
+        padding : 0;
+        flex-direction :column;
+    }
+    .signout-cont button{
+        width : 30%;
+        margin-left : 35%;
+        margin-top : 10px;
+    }
+    
+    
+}
+@media screen and (min-width : 320px) and (max-width : 350px){
+    .signout-cont {
+        padding : 0;
+        flex-direction :column;
+    }
+    .signout-cont button{
+        width : 40%;
+        margin-left : 30%;
+        margin-top : 10px;
+    }
+
 }
