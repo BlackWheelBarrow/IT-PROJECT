@@ -60,7 +60,7 @@ function profileUpdate() {
     const currentuser = JSON.parse(localStorage.getItem('currentuser'));
     if (!currentuser) {
         
-        window.location.href = "/pages/login.html";
+        window.location.href = "login.html";
         window.alert("please login first");
 
     }
@@ -73,5 +73,5 @@ function profileUpdate() {
 function signoutButton() {
     localStorage.removeItem('currentuser');
     window.alert("Signed out");
-    window.location.href = "/pages/login.html";
+    window.location.href = "login.html";
 }
