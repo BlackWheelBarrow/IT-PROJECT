@@ -24,6 +24,7 @@ function signup(name, email, password, confirmpass, number) {
         }
         else if (users[email]) {
             window.alert("email already exists");
+             window.location.href = "login.html";
         }
         else if (password === confirmpass) {
             users[email] = {
