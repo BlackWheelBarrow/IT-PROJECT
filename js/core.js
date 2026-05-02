@@ -48,7 +48,19 @@ function login(email, password) {
 
 function profileUpdate() {
     const currentuser = JSON.parse(localStorage.getItem('currentuser'));
-    document.getElementById("uemail").innerHTML = currentuser.email;
-    document.getElementById("uname").innerHTML = currentuser.name;
-    document.getElementById("unum").innerHTML = currentuser.number;
+    if (!currentuser) {
+        
+        window.location.href = "login.html";
+        window.alert("You are not logged in to an account");
+
+    }
+    else {
+        document.getElementById("uemail").innerHTML = currentuser.email;
+        document.getElementById("uname").innerHTML = currentuser.name;
+        document.getElementById("unum").innerHTML = currentuser.number;
+    }
+}
+function signoutButton() {
+    localStorage.removeItem('currentuser');
+    location.reload();
 }
