@@ -61,7 +61,7 @@ function profileUpdate() {
     if (!currentuser) {
         
         window.location.href = "/pages/login.html";
-        window.alert("You are not logged in to an account");
+        window.alert("please login first");
 
     }
     else {
@@ -72,5 +72,6 @@ function profileUpdate() {
 }
 function signoutButton() {
     localStorage.removeItem('currentuser');
-    location.reload();
+    window.alert("Signed out");
+    window.location.href = "/pages/login.html";
 }
