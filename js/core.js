@@ -50,7 +50,7 @@ function profileUpdate() {
     const currentuser = JSON.parse(localStorage.getItem('currentuser'));
     if (!currentuser) {
         
-        window.location.href = "login.html";
+        window.location.href = "/pages/login.html";
         window.alert("You are not logged in to an account");
 
     }
