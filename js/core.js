@@ -4,7 +4,7 @@ function lightTheme(){
     localStorage.setItem('theme', "light");
 }
 function darkTheme(){
-    fileCss.setAttribute('href', '/css/darktheme.css');
+    fileCss.setAttribute('href', './css/darktheme.css');
     localStorage.setItem('theme', "dark");
 }
 window.addEventListener('load', function () {
