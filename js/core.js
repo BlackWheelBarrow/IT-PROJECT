@@ -89,3 +89,15 @@ function signoutButton() {
     window.alert("Signed out");
     window.location.href = "login.html";
 }
+
+/*-----------------------------------------------------*/ 
+// by Ziad Wael - mobile nav
+let mobilenavbutton = document.getElementById("listForMobile");
+let mobilenav = document.getElementById("navformobile");
+
+function shownav(){
+    mobilenav.style.display = "flex";
+}
+function backbutton(){
+    mobilenav.style.display = "none";
+}
