@@ -37,6 +37,16 @@ body {
     border-color: currentcolor;
     border-image: initial;
 }
+.fatherhotelimg {
+    flex-direction : row-reverse;
+}
+.hotelimage {
+    background-image : url("../imgs/homedark.jpg");
+}
+.descrption {
+    background-color: rgb(45, 58, 78);
+    color : rgb(203, 200, 200);
+}
 .visitors {
     display: block;
     text-align : center;
