@@ -59,7 +59,7 @@ header ,.secondRow{
     text-align : center;
     display : none;
     flex-direction : column;
-    gap : 30px;
+    gap : 15px;
     padding : 10% 5%;
     border-bottom-left-radius : 20px;
     box-shadow : 2px 2px 10px black;
