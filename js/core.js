@@ -1,4 +1,5 @@
 let fileCss = document.getElementById("theme");
+/*
 function lightThemeHome(){
     fileCss.setAttribute('href', '');
     localStorage.setItem('theme', "light");
@@ -18,7 +19,7 @@ function darkThemeOther(){
 }
 
 
-/*-----------------------------------------------*/
+-----------------------------------------------
 window.addEventListener('load', function () {
     if (localStorage.getItem('theme') === "light") {
         lightThemeOther();
@@ -28,7 +29,7 @@ window.addEventListener('load', function () {
     }
 
 });
-
+*/
 const users = JSON.parse(localStorage.getItem('users')) || {};
 function signup(name, email, password, confirmpass, number) {
         if (!name || !email || !password || !confirmpass || !number) {
