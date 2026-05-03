@@ -1,12 +1,24 @@
 let fileCss = document.getElementById("theme");
-function lightTheme(){
+function lightThemeHome(){
     fileCss.setAttribute('href', '');
     localStorage.setItem('theme', "light");
 }
-function darkTheme(){
-    fileCss.setAttribute('href', './css/darktheme.css');
+function darkThemeHome(){
+    fileCss.setAttribute('href', 'css/darktheme.css');
     localStorage.setItem('theme', "dark");
 }
+
+function lightThemeOther(){
+    fileCss.setAttribute('href', '');
+    localStorage.setItem('theme', "light");
+}
+function darkThemeOther(){
+    fileCss.setAttribute('href', '../css/darktheme.css');
+    localStorage.setItem('theme', "dark");
+}
+
+
+/*-----------------------------------------------*/
 window.addEventListener('load', function () {
     if (localStorage.getItem('theme') === "light") {
         lightTheme();
