@@ -8,7 +8,7 @@ function darkTheme() {
     localStorage.setItem('theme', "dark");
 }
 
-window.addEventListener('load', function () {
+( function () {
     if (localStorage.getItem('theme') === "light") {
         lightTheme();
     }
@@ -16,4 +16,4 @@ window.addEventListener('load', function () {
         darkTheme();
     }
 
-});
+})();
