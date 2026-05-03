@@ -259,6 +259,12 @@ li ,i{
     .navlistformobile {
         display : none;    
     }
+    .themenavmobile {
+        margin :0 30%;
+        background-color : #91743a;
+        padding : 5px;
+        border-radius : 30px
+    }
 }
 @media screen and (min-width : 320px) and (max-width : 500px){
     .navlistformobile {
