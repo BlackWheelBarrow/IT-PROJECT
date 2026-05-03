@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="../css/core.css">
-        <link rel="stylesheet" href="../css/contact.css">
-        <link rel="stylesheet" id="theme">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" id="theme">
 
-        <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
-        <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/otherLDthemes.js"></script>
+</head>
     <body>
         <header>
             <div class="logo">HOTEL</div>
@@ -23,10 +24,10 @@
                     <a href="./aboutus.html"><li class="desktop hide">about us</li></a>
                     <a href="./Profile.html"><li class="desktop">Profile</li></a>
                     <div class="theme">
-                        <img src="../imgs/sun.png" class="src" onclick="lightThemeOther()" id="lightBtn">
-                        <img src="../imgs/moon.png" class="src" onclick="darkThemeOther()" id="darkBtn">
+                        <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
                     </div>
-                    <a href="listForMobile">
+                    <a onclick="shownav()">
                         <li class="listForMobile">
                             <i class="lni lni-menu-hamburger-1"></i>
                         </li>
@@ -35,6 +36,18 @@
             </div>
         </header>
         <main>
+            <div class="navlistformobile" id="navformobile">
+                <a onclick="backbutton()" style="border-radius : 10px;border : solid 1px #D9BB80; margin:10px 30%"><i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="../index.html"><li class="">home</li></a>
+                <a href="booking.html"><li class="">booking</li></a>
+                <a href=""><li class="">Utilities</li></a>
+                <a href=""><li class="">gallery</li></a>
+                <a href="contact.html"><li class="">contact us</li></a>
+                <a href="aboutus.html"><li class="">about us</li></a>
+                <a href="profile.html"><li class="">Profile</li></a>
+                <a href="login.html"><li class="">login</li></a>
+                <a href="signup.html"><li class="">sign up</li></a>
+            </div>
             <section class="window window-dark">
                 <div class="container">
                     <div class="text">

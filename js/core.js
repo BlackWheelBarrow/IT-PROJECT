@@ -1,4 +1,5 @@
 let fileCss = document.getElementById("theme");
+/*
 function lightThemeHome(){
     fileCss.setAttribute('href', '');
     localStorage.setItem('theme', "light");
@@ -13,22 +14,22 @@ function lightThemeOther(){
     localStorage.setItem('theme', "light");
 }
 function darkThemeOther(){
-    fileCss.setAttribute('href', '../css/darktheme.css');
+    fileCss.setAttribute('href', '/css/darktheme.css');
     localStorage.setItem('theme', "dark");
 }
 
 
-/*-----------------------------------------------*/
+-----------------------------------------------
 window.addEventListener('load', function () {
     if (localStorage.getItem('theme') === "light") {
-        lightTheme();
+        lightThemeOther();
     }
     else if (localStorage.getItem('theme') === "dark") {
-        darkTheme();
+        darkThemeOther();
     }
 
 });
-
+*/
 const users = JSON.parse(localStorage.getItem('users')) || {};
 function signup(name, email, password, confirmpass, number) {
         if (!name || !email || !password || !confirmpass || !number) {
@@ -87,4 +88,16 @@ function signoutButton() {
     localStorage.removeItem('currentuser');
     window.alert("Signed out");
     window.location.href = "login.html";
+}
+
+/*-----------------------------------------------------*/ 
+// by Ziad Wael - mobile nav
+let mobilenavbutton = document.getElementById("listForMobile");
+let mobilenav = document.getElementById("navformobile");
+
+function shownav(){
+    mobilenav.style.display = "flex";
+}
+function backbutton(){
+    mobilenav.style.display = "none";
 }
