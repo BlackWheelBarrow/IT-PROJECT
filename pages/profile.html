@@ -27,7 +27,7 @@
                         <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
                         <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
                     </div>
-                    <a href="listForMobile">
+                    <a onclick="shownav()">
                         <li class="listForMobile">
                             <i class="lni lni-menu-hamburger-1"></i>
                         </li>
@@ -35,8 +35,19 @@
                 </ul>
             </div>
         </header>
-        <div class="banner"></div>
         <main>
+            <div class="navlistformobile" id="navformobile">
+                <a onclick="backbutton()" style="border-radius : 10px;border : solid 1px #D9BB80; margin:10px 30%"><i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="../index.html"><li class="">home</li></a>
+                <a href="booking.html"><li class="">booking</li></a>
+                <a href=""><li class="">Utilities</li></a>
+                <a href=""><li class="">gallery</li></a>
+                <a href="contact.html"><li class="">contact us</li></a>
+                <a href="aboutus.html"><li class="">about us</li></a>
+                <a href="profile.html"><li class="">Profile</li></a>
+                <a href="login.html"><li class="">login</li></a>
+                <a href="signup.html"><li class="">sign up</li></a>
+            </div>
             <div class="profile">
                 <div class="profileW">
                     <span>my profile</span>
