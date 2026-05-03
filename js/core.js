@@ -21,10 +21,10 @@ function darkThemeOther(){
 /*-----------------------------------------------*/
 window.addEventListener('load', function () {
     if (localStorage.getItem('theme') === "light") {
-        lightTheme();
+        lightThemeOther();
     }
     else if (localStorage.getItem('theme') === "dark") {
-        darkTheme();
+        darkThemeOther();
     }
 
 });
