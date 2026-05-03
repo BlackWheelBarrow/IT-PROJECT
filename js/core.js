@@ -1,4 +1,4 @@
-let fileCss = document.getElementById("theme");
+
 /*
 function lightThemeHome(){
     fileCss.setAttribute('href', '');
