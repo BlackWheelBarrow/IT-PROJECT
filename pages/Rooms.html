@@ -2,19 +2,16 @@
 <html>
 
 <head>
-    <title>Rooms</title>
-    <link rel="stylesheet" href="../css/Rooms.css">
+    <title>Home</title>
     <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/booking.css">
     <link rel="stylesheet" id="theme">
 
-    <link rel="stylesheet" href="css/regular-lineicons/lineicons-free.css">
-    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
@@ -23,21 +20,21 @@
         <div class="nav">
             <ul>
                 <a href="../index.html">
-                    <li class="active desktop">home</li>
+                    <li class="desktop">home</li>
                 </a>
                 <a href="./booking.html">
-                    <li class="desktop">booking</li>
+                    <li class="active desktop">booking</li>
                 </a>
-                <a href="#">
+                <a href="">
                     <li class="desktop hide">Utilities</li>
                 </a>
                 <a href="./Rooms.html">
                     <li class="desktop">Rooms</li>
                 </a>
-                <a href="">
+                <a href="./aboutus.html">
                     <li class="desktop hide">about us</li>
                 </a>
-                <a href="./pages/profile.html">
+                <a href="./profile.html">
                     <li class="desktop">Profile</li>
                 </a>
                 <div class="theme">
@@ -52,130 +49,60 @@
             </ul>
         </div>
     </header>
-    <section class="firstSection">
-        <div class="firstSectionDiv">
-            <div class="firstSectionTitle">
-                <p>Experience the Art of Comfort</p>
-            </div>
-            <div class="biggestDiv">
-                <div class="imageParent">
-                    <div class="firstImageInParent onePosition active">
-                        <img src="../imgs/firstImage.avif">
+    <main class="big-container-booking">
+        <section class="window">
+            <span class="booking-title">make a reservation</span>
+            <div class="container">
+                <form>
+                    <label for="area">choose your room</label>
+                    <select id="area">
+                        <option>Signature Loft Penthouse</option>
+                        <option>Nile Horizon Twin</option>
+                        <option>Azure Oceanfront Retreat</option>
+                        <option>Terrace Sea View Retreat</option>
+                        <option>Seaside Twin</option>
+                        <option>Emerald Mountain Suite</option>
+                        <option>Golden Wood Atrium Room</option>
+                        <option>The Metropolitan Double</option>
+                        <option>Azure Pool View Double</option>
+                    </select>
+                    <div class="form-container1">
+                        <div class="form-cont1-1">
+                            <label for="arivalDate">arival date</label>
+                            <input id="arivalDate" type="date">
+                        </div>
+                        <div class="form-cont1-2">
+                            <label for="noOFNights"># of nights</label>
+                            <input id="noOFNights" type="number">
+                        </div>
                     </div>
-                    <div class="secondImageInParent onePosition">
-                        <img src="../imgs/secondImage.jpg">
+                    <div class="form-container2">
+                        <div class="form-cont2-1">
+                            <label for="rooms">rooms</label>
+                            <input id="rooms" type="number">
+                        </div>
+                        <div class="form-cont2-2">
+                            <label for="adults">adults</label>
+                            <input id="adults" type="number">
+                        </div>
+                        <div class="form-cont2-3">
+                            <label for="childern">children</label>
+                            <input id="childern" type="number">
+                        </div>
                     </div>
-                    <div class="thirdImageInParent onePosition">
-                        <img src="../imgs/thirdImage.jpg">
-                    </div>
-                    <div class="arrows">
-                        <i class="fa-solid fa-angle-left leftBTN"></i>
-                        <i class="fa-solid fa-angle-right rightBTN"></i>
-                    </div>
-                    <div class="opacityDiv"></div>
-                </div>
+                    <button>Book Now</button>
+                </form>
             </div>
-        </div>
-    </section>
-    <section class="secondSection">
-        <div class="secondSectionFirstDiv">
-            <div class="secondSectionTopText">
-                <p>Discover Our Signature Rooms & Suites</p>
-            </div>
-            <div class="cardsParent">
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/firstCardImage.jpg">
-                    <p class="photoName">Signature Loft Penthouse</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> City View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 3 beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 250$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/seventhCardImage.jpg">
-                    <p class="photoName">Nile Horizon Twin Suite</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Nile View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> Two beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> Two Bathrooms</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 280$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/cardThirdImage.jpg">
-                    <p class="photoName">Azure Oceanfront Retreat</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Ocean View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> One bed</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> One Bathroom</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 250$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/fourthCardImage.jpg">
-                    <p class="photoName">Terrace Sea View Retreat</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Sea View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 3 beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 290$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/fifthCardImage.jpg">
-                    <p class="photoName">Seaside Twin</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Sea View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 2 beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> Two Bathrooms</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 270$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/sixthsCardImage.jpg">
-                    <p class="photoName">Emerald Mountain Suite</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Mountain View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 4 beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> Three Bathrooms</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 550$ / Night </p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/cardSecondImage.jpg">
-                    <p class="photoName">Golden Wood Atrium Room</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Atrium View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> One beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> One bathrooom</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 150$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/eightsCardImage.jpg">
-                    <p class="photoName">The Metropolitan Double</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Urban View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 3 beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> Two Bathrooms</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 132$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-                <div class="firstCard sameBorder">
-                    <img src="../imgs/ninthImage.jpg">
-                    <p class="photoName">Azure Pool View Double</p>
-                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Pool View</p>
-                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 2 beds</p>
-                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> One Bathroom</p>
-                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 200$ / Night</p>
-                    <input type="submit" value="Book Now" class="BookBotton"
-                        onclick="window.location.href='./booking.html';">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+        <section class="some-words">
+            <h1>
+                experience ultimate success in velvet luxury
+            </h1>
+            <h4>
+                book your place in the Elite area and make a new era of success
+            </h4>
+        </section>
+    </main>
     <footer>
         <div class="firstRow">
             <div class="footerForDesktop">
@@ -290,7 +217,6 @@
             </div>
         </div>
     </footer>
-    <script src="../js/Rooms.js"></script>
     <script src="../js/otherCore.js"></script>
 </body>
 
