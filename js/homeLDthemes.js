@@ -1,3 +1,4 @@
+let fileCss = document.getElementById("theme");
 function lightTheme() {
     fileCss.setAttribute('href', '');
     localStorage.setItem('theme', "light");
