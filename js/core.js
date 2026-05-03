@@ -13,7 +13,7 @@ function lightThemeOther(){
     localStorage.setItem('theme', "light");
 }
 function darkThemeOther(){
-    fileCss.setAttribute('href', '../css/darktheme.css');
+    fileCss.setAttribute('href', '/css/darktheme.css');
     localStorage.setItem('theme', "dark");
 }
 
