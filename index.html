@@ -17,20 +17,31 @@
             <div class="logo">HOTEL</div>
             <div class="nav">
                 <ul>
-                    <a href="index.html"><li class="active desktop">home</li></a>
-                    <a href="./pages/booking.html"><li class="desktop">booking</li></a>
-                    <a href=""><li class="desktop hide">Utilities</li></a>
-                    <a href="./pages/Rooms.html"><li class="desktop">Rooms</li></a>
-                    <a href="pages/aboutus.html"><li class="desktop hide">about us</li></a>
-                    <a href="./pages/profile.html"><li class="desktop">Profile</li></a>
+                    <audio id="seasound" src="audio/soundbeach.mp3"></audio>
+                    <button type="button" onclick="audioplay()">play sound</button>
+                    <button type="button" onclick="audiopause()">pause sound</button>
+
+
+                    <a href="index.html">
+                    <li class="active desktop">home</li></a>
+                    <a href="./pages/booking.html">
+                    <li class="desktop">booking</li></a>
+                    <a href="">
+                    <li class="desktop hide">Utilities</li></a>
+                    <a href="./pages/Rooms.html">
+                    <li class="desktop">Rooms</li></a>
+                    <a href="pages/aboutus.html">
+                    <li class="desktop hide">about us</li></a>
+                    <a href="./pages/profile.html">
+                    <li class="desktop">Profile</li></a>
                     <div class="theme">
                         <img src="imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
                         <img src="imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
                     </div>
                     <a onclick="shownav()">
-                        <li class="listForMobile">
-                            <i class="lni lni-menu-hamburger-1"></i>
-                        </li>
+                    <li class="listForMobile">
+                        <i class="lni lni-menu-hamburger-1"></i>
+                    </li>
                     </a>
                 </ul>
             </div>

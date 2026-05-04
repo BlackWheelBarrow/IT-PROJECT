@@ -101,3 +101,14 @@ function shownav(){
 function backbutton(){
     mobilenav.style.display = "none";
 }
+
+
+function audioplay() {
+    let x = document.getElementById("seasound");
+    x.play();
+}
+
+function audiopause() {
+    let x = document.getElementById("seasound");
+    x.pause();
+}
