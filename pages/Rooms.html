@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" id="theme">
 
-    <link rel="stylesheet" href="css/regular-lineicons/lineicons-free.css">
-    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,44 +18,47 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">HOTEL</div>
-        <div class="nav">
-            <ul>
-                <a href="../index.html">
-                    <li class="active desktop">home</li>
-                </a>
-                <a href="./booking.html">
-                    <li class="desktop">booking</li>
-                </a>
-                <a href="#">
-                    <li class="desktop hide">Utilities</li>
-                </a>
-                <a href="./Rooms.html">
-                    <li class="desktop">Rooms</li>
-                </a>
-                <a href="">
-                    <li class="desktop hide">about us</li>
-                </a>
-                <a href="./pages/profile.html">
-                    <li class="desktop">Profile</li>
-                </a>
-                <div class="theme">
-                    <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
-                    <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
-                </div>
-                <a href="listForMobile">
-                    <li class="listForMobile">
-                        <i class="lni lni-menu-hamburger-1"></i>
-                    </li>
-                </a>
-            </ul>
+        <header>
+            <div class="logo">HOTEL</div>
+            <div class="nav">
+                 <ul>
+                    <a href="../index.html"><li class="desktop">home</li></a>
+                    <a href="./booking.html"><li class="desktop">booking</li></a>
+                    <a href=""><li class="desktop hide">Utilities</li></a>
+                    <a href="./Rooms.html"><li class="desktop">Hotel</li></a>
+                    <a href="./aboutus.html"><li class="desktop hide">about us</li></a>
+                    <a href="./Profile.html"><li class="desktop">Profile</li></a>
+                    <div class="theme">
+                        <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+                    </div>
+                    <a onclick="shownav()">
+                        <li class="listForMobile">
+                            <i class="lni lni-menu-hamburger-1"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <div class="navlistformobile" id="navformobile">
+            <a onclick="backbutton()" style="border-radius : 10px;border : solid 1px #D9BB80; margin:10px 30%"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="themenavmobile">
+                <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+            </div>
+            <a href="../index.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">home</li></a>
+            <a href="booking.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">booking</li></a>
+            <a href=""><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Utilities</li></a>
+            <a href="./Rooms.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Hotel</li></a>
+            <a href="contact.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">contact us</li></a>
+            <a href="aboutus.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">about us</li></a>
+            <a href="profile.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Profile</li></a>
+            <a href="login.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">login</li></a>
+            <a href="signup.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">sign up</li></a>
         </div>
-    </header>
-    <section class="firstSection">
         <div class="firstSectionDiv">
             <div class="firstSectionTitle">
-                <p>Experience the Art of Comfort</p>
+                Experience the Art of Comfort
             </div>
             <div class="biggestDiv">
                 <div class="imageParent">
@@ -76,11 +79,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="secondSection">
         <div class="secondSectionFirstDiv">
             <div class="secondSectionTopText">
-                <p>Discover Our Signature Rooms & Suites</p>
+                Discover Our Signature Rooms & Suites
             </div>
             <div class="cardsParent">
                 <div class="firstCard sameBorder">
@@ -145,7 +146,7 @@
                 </div>
                 <div class="firstCard sameBorder">
                     <img src="../imgs/cardSecondImage.jpg">
-                    <p class="photoName">Golden Wood Atrium Room</p>
+                    <p class="photoName" style="font-size : 22px;">Golden Wood Atrium Room</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Atrium View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> One beds</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> One bathrooom</p>
@@ -175,7 +176,6 @@
                 </div>
             </div>
         </div>
-    </section>
     <footer>
         <div class="firstRow">
             <div class="footerForDesktop">
@@ -291,7 +291,7 @@
         </div>
     </footer>
     <script src="../js/Rooms.js"></script>
-    <script src="../js/otherCore.js"></script>
+    <script src="../js/core.js"></script>
 </body>
 
 </html>
