@@ -39,6 +39,9 @@ function signup(name, email, password, confirmpass, number) {
             window.alert("email already exists");
              window.location.href = "login.html";
         }
+        else if (!(email.toLowerCase().endsWith("@gmail.com"))) {
+            window.alert("please enter a valid email");
+        }
         else if (password === confirmpass) {
             users[email] = {
                 name: name,
@@ -111,4 +114,16 @@ function audioplay() {
 function audiopause() {
     let x = document.getElementById("seasound");
     x.pause();
+}
+
+function contactusvalidation(name,number,mail,subject,message) {
+    if (!name || !number || !mail || !subject || !message) {
+        window.alert("all fields are required"); //checking if tall the fields are filled
+    }
+    else if (!(mail.toLowerCase().endsWith("@gmail.com"))) {
+            window.alert("please enter a valid email"); //checking if the email is valid
+        }
+    else {
+        window.alert("we got your response and we will reach out to you as soon as possible"); //if the data is correct 
+        }
 }
