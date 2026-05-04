@@ -32,27 +32,30 @@ window.addEventListener('load', function () {
 */
 const users = JSON.parse(localStorage.getItem('users')) || {};
 function signup(name, email, password, confirmpass, number) {
-        if (!name || !email || !password || !confirmpass || !number) {
-            window.alert("all fields are required");
-        }
-        else if (users[email]) {
-            window.alert("email already exists");
-             window.location.href = "login.html";
-        }
-        else if (!(email.toLowerCase().endsWith("@gmail.com"))) {
-            window.alert("please enter a valid email");
-        }
-        else if (password === confirmpass) {
-            users[email] = {
-                name: name,
-                email: email,
-                number: number,
-                password: password,
-            };
-            localStorage.setItem('users', JSON.stringify(users));
-            localStorage.setItem('currentuser', JSON.stringify(users[email]));
-            window.location.href = "profile.html";
-        }
+    if (!name || !email || !password || !confirmpass || !number) {
+        window.alert("all fields are required");
+    }
+    else if (users[email]) {
+        window.alert("email already exists");
+        window.location.href = "login.html";
+    }
+    else if (!(email.toLowerCase().endsWith("@gmail.com"))) { // validating the email
+        window.alert("please enter a valid email");
+    }
+    else if (password === confirmpass) {
+        users[email] = {
+            name: name,
+            email: email,
+            number: number,
+            password: password,
+        };
+        localStorage.setItem('users', JSON.stringify(users));
+        localStorage.setItem('currentuser', JSON.stringify(users[email]));
+        window.location.href = "profile.html";
+    }
+    else if (password !== confirmpass) {//validating the passwords
+        window.alert("passwords don't match");
+    }
 
     }
 
