@@ -1,0 +1,222 @@
+header, .firstRow ,.logoFooterForMobile{
+    background-color: rgb(45, 58, 78);
+    padding: 20px 7%;
+    color: #D9BB80;
+}
+.secondRow {
+    background-color: rgb(27, 35, 48);
+}
+#lightBtn {
+    display : inline; 
+}
+#darkBtn {
+    display :none; 
+}
+body {
+    background-color : rgb(47, 49, 70);
+}
+.hotelImage {
+    background-image: url(../imgs/homedark.jpg);
+}
+.welcomeSection {
+    background-color: rgba(0, 0, 0, 0.408);
+}
+.logIn, .signUp
+{
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(217, 187, 128);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background-color: rgb(45, 58, 78);
+    font-family: "Times New Roman";
+    border-width: medium;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: initial;
+}
+.fatherhotelimg {
+    flex-direction : row-reverse;
+}
+.hotelimage {
+    background-image : url("../imgs/homedark.jpg");
+}
+.descrption {
+    background-color: rgb(45, 58, 78);
+    color : rgb(203, 200, 200);
+}
+.visitors {
+    display: block;
+    text-align : center;
+    width : 60%;
+    margin-left : 20%; 
+}
+.visitors h2 {
+    color : #cecece;
+    border: #525252 solid 3px;
+    padding : 10px;
+    display : block;
+    margin-bottom : 20px;
+}
+.visitors h3 {
+    color: rgb(217, 187, 128);
+    border-bottom: none;
+    background-color: rgb(45, 58, 78);
+    border-left: #525252 solid 3px;
+}
+.stars span {
+    color : #cecece;
+}
+.starsIcon {
+    background-color: rgb(45, 58, 78);
+}
+.big-container-booking {
+    background-image: url(../imgs/darkbooking.jpg);
+}
+button {
+    background-color: rgb(57, 79, 113);
+}
+button:hover {
+    background-color: rgb(26, 37, 55);
+}
+.banner-aboutus{
+    background-image: url("../imgs/darkaboutus.jpg");
+}
+h1 {
+    color : #cecece;
+    border-bottom: solid 2px #cecece;
+}
+h2 ,ul li{
+    color : #cecece;
+}
+.Text {
+    font-weight: 200;
+    color : #cecece;
+    font-family: font2;
+    background-color: rgb(50, 65, 86);
+    border-left: solid 5px #4f4f4f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.Contact-title {
+    background-color: rgba(128, 128, 128, 0);
+    border : none;
+    border-radius: 0;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.windowdark{
+    background-image : url("../imgs/homedark.jpg")
+}
+.user button {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: rgb(45, 58, 78);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    color: white;
+}
+.loginW ,.signupW ,.profileW{
+    background-color: rgb(47, 66, 92);
+}
+.loginW  span ,.signupW  span {
+    color: #ececec;
+}
+.loginW  a  , .signupW a{
+    color: #D9BB80 !important;
+}
+.inputLabels {
+    color: #ececec;
+}
+.loginImg {
+    background-image: url(../imgs/loginImagedark.jpg);
+}
+.signImg {
+    background-image: url(../imgs/signupdark.jpg);
+}
+.banner {
+    width : 100%;
+    background-image : url("../imgs/profiledark.jpg");
+    background-size : cover;
+    height : 200px;
+}
+.window-dark{
+    background-image: url("../imgs/contactusdark.jpg");
+}
+.window-dark div {
+    flex-direction :column;
+    gap : 30px;
+}
+.login ,.signup{
+    flex-direction: row-reverse;
+}
+.profileW > span {
+    color : rgb(215, 215, 215);
+    border-bottom : 1px solid rgb(215, 215, 215);
+}
+.dark-profile-td {
+    color : rgb(215, 215, 215);
+}.help {
+    color : rgb(215, 215, 215);
+}
+.welcomeSection {
+    text-align: center;
+}
+.btnsLS {
+    justify-content : center; 
+}
+.big-container-booking{
+    display : flex;
+    width : 100%;
+    flex-direction :column-reverse;
+}
+.banner-aboutus {
+    background-image : url("../imgs/darkaboutus.jpg")
+}
+.signout-btn {
+    padding : 10px 20px;;
+    border : none ;
+    background-color : #1944a9;
+    color  : white;
+    border-radius : 10px;
+    transition : 0.3s
+}
+.signout-btn:hover{
+    background-color : #162421;
+}
+.navlistformobile{
+    background-color: rgb(45, 58, 78);
+}
+.theme {
+    background-color: #91743a;
+}
+.themenavmobile {
+    margin :0 30%;
+    background-color : #91743a;
+    padding : 5px;
+    border-radius : 30px
+}
+
+.leftBTN:hover,
+.rightBTN:hover {
+    background-color: goldenrod !important;
+    border: 0.5px solid goldenrod !important;
+}
+
+.photoDescribtion {
+    color: white;
+}
+
+.BookBotton {
+    background-color: goldenrod;
+}
+
+.BookBotton:hover {
+    background-color: rgba(255, 217, 0, 0.932);
+}
