@@ -58,14 +58,14 @@
                 <div class="container">
                     <form method="post" id="ziad">
                         <div class="">
-                            <label for="firstname">First Name</label>
-                            <input id="firstName" type="name" onchange="fnameCheck()"> 
-                            <label for="secondname">second Name</label>
-                            <input id="lastName" type="name" onchange="lnameCheck()"> 
-                            <label for="mail">E-mail</label>
-                            <input id="mail" type="mail" onchange="mailCheck()"> 
+                            <label for="firstName">First Name :</label>
+                            <input id="firstName" type="name" onchange="fnameCheck()" required placeholder="Enter your first Name"> 
+                            <label for="lastName">second Name :</label>
+                            <input id="lastName" type="name" onchange="lnameCheck()" required placeholder="Enter your last Name"> 
+                            <label for="mail">E-mail :</label>
+                            <input id="mail" type="mail" onchange="mailCheck()" required placeholder="Enter your e-mail"> 
                         </div>
-<label for="area">choose your room</label>
+<label for="area">choose your room :</label>
                     <select id="area">
                         <option>Signature Loft Penthouse</option>
                         <option>Nile Horizon Twin</option>
@@ -79,26 +79,26 @@
                     </select>
                         <div class="form-container1">
                             <div class="form-cont1-1">
-                                <label for="arivalDate">arival date</label>
+                                <label for="arivalDate">arival date :</label>
                                 <input id="arivalDate" type="date"> 
                             </div>
                             <div class="form-cont1-2">
-                                <label for="noOFNights"># of nights</label>
-                                <input id="noOFNights" type="number" onchange="numNightsCheck()"> 
+                                <label for="noOFNights"># of nights :</label>
+                                <input id="noOFNights" type="number" required onchange="numNightsCheck()"> 
                             </div>
                         </div>
                         <div class="form-container2">
                             <div class="form-cont2-1">
-                                <label for="rooms" >rooms</label>
-                                <input id="rooms" type="number " onchange="numRoomsCheck()" > 
+                                <label for="rooms" >rooms :</label>
+                                <input id="rooms" type="number " required onchange="numRoomsCheck()" > 
                             </div>
                             <div class="form-cont2-2">
-                                <label for="adults" >adults</label>
-                                <input id="adults" type="number" onchange="numAdultsCheck()"> 
+                                <label for="adults" >adults :</label>
+                                <input id="adults" type="number" required onchange="numAdultsCheck()"> 
                             </div>
                             <div class="form-cont2-3">
-                                <label for="children" >children</label>
-                                <input id="children" type="number" onchange="numChildsCheck()"> 
+                                <label for="children" >children :</label>
+                                <input id="children" type="number" required onchange="numChildsCheck()"> 
                             </div>
                         </div>
                         <div id="bookingAlerts">
