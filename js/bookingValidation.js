@@ -1,194 +1,118 @@
-let alertWindow = document.getElementById("bookingAlerts");
-let success = document.getElementById("success");
-let submitButton = document.getElementById("submit");
-let canSubmit = -1;
-
-let makeMinDate = new Date().toISOString().split('T')[0]; // from stackoverflow
-document.getElementById("arivalDate").setAttribute("min",makeMinDate);
-let msgs = [];
-msgs[0] = document.createElement("h6");
-msgs[1] = document.createElement("h6");
-msgs[2] = document.createElement("h6");
-msgs[3] = document.createElement("h6");
-msgs[4] = document.createElement("h6");
-msgs[5] = document.createElement("h6");
-msgs[6] = document.createElement("h6");
-
-msgs[0].style.cssText = `padding : 2px 5px;`;
-msgs[1].style.cssText = `padding : 2px 5px;`;
-msgs[2].style.cssText = `padding : 2px 5px;`; // completed
-msgs[3].style.cssText = `padding : 2px 5px;`; // first name
-msgs[4].style.cssText = `padding : 2px 5px;`; // last name
-msgs[5].style.cssText = `padding : 2px 5px;`; // email
-msgs[6].style.cssText = `padding : 2px 5px;`; // email
- 
-let firstName = "nothing";
-let lastName = "nothing";
-let mail = "";
-let noOfNights = 0;
-let noOfRooms = 0;
-let noOfAdults = 0;
-let noOfChilds = 0;
-
-let MaxHumanPerRoom = 2;
-let humanCounter = 0;
-let noOFExpectedRooms = (MaxHumanPerRoom * noOfRooms);
-
-function mailCheck(){
-    mail = document.getElementById("mail").value;
-    if( !(mail.includes("@")) || !(mail.includes(".")) ){
-        msgs[5].innerText = "invaild e-mail";
-        msgs[5].style.display = "block";
-        alertWindow.append(msgs[5]);
-        canSubmit = -1;
-    }else {
-        msgs[5].style.display = "none";
-        canSubmit = 1;
-    }
-}
-function fnameCheck(){
-    firstName = document.getElementById("firstName").value;
-    if(isNaN(firstName)){
-        if( firstName.length < 3 ){
-            canSubmit = -1;
-            msgs[3].innerText = "First Name is too short";
-            msgs[3].style.display = "block";
-            alertWindow.append(msgs[3]);
-        }
-        else if( firstName.length > 10 ){
-            canSubmit = -1;
-            msgs[3].innerText = "First Name is too logn";
-            msgs[3].style.display = "block";
-            alertWindow.append(msgs[3]);
-        }else if( 
-            firstName.includes("@") ||
-            firstName.includes("#") ||
-            firstName.includes("_") ||
-            firstName.includes(" ") 
-            
-        ){
-            msgs[3].innerText = "special characters or spaces not allowed only ( - )";
-            msgs[3].style.display = "block";
-            alertWindow.append(msgs[3]);
-            canSubmit = -1;
-        }else {
-            msgs[3].style.display = "none";
-            canSubmit = 1;
-        }
-    }else {
-        canSubmit = -1;
-        msgs[3].innerText = "Enter a name not a number";
-        msgs[3].style.display = "block";
-        alertWindow.append(msgs[3]);
-    }
-}
-function lnameCheck(){
-    lastName = document.getElementById("lastName").value;
-    if(isNaN(lastName)){
-        if( lastName.length < 3 ){
-            canSubmit = -1;
-            msgs[4].innerText = "Last Name is too short";
-            msgs[4].style.display = "block";
-            alertWindow.append(msgs[4]);
-        }
-        else if( lastName.length > 10 ){
-            canSubmit = -1;
-            msgs[4].innerText = "last Name is too logn";
-            msgs[4].style.display = "block";
-            alertWindow.append(msgs[4]);
-        } else {
-            msgs[4].style.display = "none";
-            canSubmit = 1;
-            
-        }
-    }else {
-        canSubmit = -1;
-        msgs[4].innerText = "Enter a name not a number";
-        msgs[4].style.display = "block";
-        alertWindow.append(msgs[4]);
-    }
-}
-
-function checkSubmit(){
-    if(canSubmit == 1){
-        msgs[2].innerText = "we will send an e-mail to confirm the booking within 10 - 20 minuts";
-        msgs[2].style.display = "block";
-        success.append(msgs[2]);
-    }
-}
-
-function numNightsCheck(){
+let date = new Date().toISOString().split("T")[0];
+document.getElementById("arivalDate").setAttribute("min",date);
+function bigfunc(){
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let mail = document.getElementById("mail").value;
+    let arivalDate = document.getElementById("arivalDate").value;
+    let noOFNights = document.getElementById("noOFNights").value;
+    let rooms = document.getElementById("rooms").value;
+    let adults = document.getElementById("adults").value;
+    let children = document.getElementById("children").value;
     
-    noOfNights = Number(document.getElementById("noOFNights").value);
-    if(noOfNights <= 0){
-        canSubmit = -1;
-        msgs[0].innerText = "Number of nights should be from greater than 0"
-        msgs[0].style.display = "block";
-        alertWindow.append(msgs[0]);
-    }else {
-        msgs[0].style.display = "none";
-        canSubmit = 1;
+    let roomlimit = 2;
+    let Excpectedminindvisual = roomlimit * rooms;
+    let indvisuals = Number(adults) + Number(children);
+
+    let counter = 9;
+
+    let bookingerror1 = document.getElementById("bookingerror1");
+    let bookingerror2 = document.getElementById("bookingerror2");
+    let bookingerror3 = document.getElementById("bookingerror3");
+    let bookingerror4 = document.getElementById("bookingerror4");
+    let bookingerror5 = document.getElementById("bookingerror5");
+    let bookingerror6 = document.getElementById("bookingerror6");
+    let bookingerror7 = document.getElementById("bookingerror7");
+    let bookingerror8 = document.getElementById("bookingerror8");
+    let bookingerror9 = document.getElementById("bookingerror9");
+    let indvisualserror = document.getElementById("indvisualserror");
+    let capacityerror = document.getElementById("capacityerror");
+    let manyroomserror = document.getElementById("manyroomserror");
+    let successbooking = document.getElementById("successbooking");
+    
+    manyroomserror.innerText = `Max Rooms To Book Is ${indvisuals} Rooms`;
+    capacityerror.innerText = `Max capacity for ${rooms} Rooms is ${Excpectedminindvisual} Guests`;
+
+    bookingerror1.style.display = "none";
+    bookingerror2.style.display = "none";
+    bookingerror3.style.display = "none";
+    bookingerror4.style.display = "none";
+    bookingerror5.style.display = "none";
+    bookingerror6.style.display = "none";
+    bookingerror7.style.display = "none";
+    bookingerror8.style.display = "none";
+    bookingerror9.style.display = "none";
+    indvisualserror.style.display = "none";
+    capacityerror.style.display = "none";
+    manyroomserror.style.display = "none";
+    successbooking.style.display = "none";
+
+    if(firstName.length < 3 && !( /\d/.test(firstName) ) && !(firstName.length == 0)){ 
+        counter = counter - 1;      
+        bookingerror1.style.display = "block";
+    } 
+    if(lastName.length < 3 && !( /\d/.test(lastName) ) && !(lastName.length == 0)) {
+         bookingerror2.style.display = "block";
+        counter = counter - 1;      
+    }
+
+    if(
+        /\d/.test(firstName) ||   /\d/.test(lastName) || 
+        firstName.includes("@") || lastName.includes("@") ||
+        firstName.includes("#") || lastName.includes("#") ||
+        firstName.includes("_") || lastName.includes("_") ||
+        firstName.includes("$") || lastName.includes("$") ||
+        firstName.includes("%") || lastName.includes("%") ||
+        firstName.includes("^") || lastName.includes("^") ||
+        firstName.includes("&") || lastName.includes("&") ||
+        firstName.includes("*") || lastName.includes("*") ||
+        firstName.includes("(") || lastName.includes("(") ||
+        firstName.includes(")") || lastName.includes(")") 
+      ) {
+        bookingerror3.style.display = "block";
+        counter = counter - 1;      
+    } 
+        
+        
+    if(noOFNights < 0){
+        bookingerror4.style.display = "block";        
+        counter = counter - 1;      
+    }
+    if(rooms < 0){
+        bookingerror5.style.display = "block";        
+        counter = counter - 1;      
+    }
+    if(children < 0){
+        bookingerror7.style.display = "block";        
+        counter = counter - 1;      
+    }
+    if(adults < 0){
+        bookingerror6.style.display = "block";        
+        counter = counter - 1;      
     }
     
-}
-
-function numRoomsCheck(){
-    noOfRooms = Number(document.getElementById("rooms").value);
-    noOfChilds = Number(document.getElementById("children").value);
-    noOfAdults = Number(document.getElementById("adults").value);
-    noOFExpectedRooms = (MaxHumanPerRoom * noOfRooms);
+    if(! (mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) ) && !(mail.length == 0)){
+        bookingerror8.style.display = "block";        
+        counter = counter - 1;      
+    }
+    
+    if(rooms > indvisuals){
+        manyroomserror.style.display = "block";        
+        counter = counter - 1;      
+    }
+    if(Excpectedminindvisual < indvisuals){
+        capacityerror.style.display = "block";        
+        counter = counter - 1;      
+    }
     
     if(
-        (noOfAdults == 0 && noOfChilds == 0 && noOfRooms > 0) ||
-        (noOfAdults != 0 && noOfChilds == 0) ||
-        (noOfAdults == 0 && noOfChilds != 0) ||
-        (noOfAdults != 0 && noOfChilds != 0 && noOfChilds == 0) 
-        
+        firstName.length == 0 && lastName.length == 0 && mail.length == 0
+        && noOFNights.length == 0 && rooms.length == 0 && adults.length == 0 && children.length == 0
     ){
-        msgs[1].style.display = "none";
-        canSubmit = 1;
+        bookingerror9.style.display = "block";  
+        counter = counter - 1;      
     }
-    else if(noOfRooms < 0 ){
-        canSubmit = -1;
-        msgs[1].innerText = `Number of rooms should be greater than zero`;
-        msgs[1].style.display = "block";
-        alertWindow.append(msgs[1]);
-    }
-    else if(noOFExpectedRooms <  noOfChilds + noOfAdults){
-        msgs[1].innerText = `number of indvisuals is more than the capacity of rooms - Max is ${noOFExpectedRooms}`;
-        msgs[1].style.display = "block";
-        alertWindow.append(msgs[1]);
-        canSubmit = -1;
-    }else if(noOfRooms >  noOfAdults + noOfChilds ){
-        canSubmit = -1;
-        msgs[1].innerText = `You can't book more than ${noOfChilds + noOfAdults} Rooms`;
-        msgs[1].style.display = "block";
-        alertWindow.append(msgs[1]);
-    }
-}
-function numChildsCheck(){
-    numRoomsCheck();
-    if(noOfChilds < 0 ){
-        canSubmit = -1;
-        msgs[2].innerText = `Number of children should be greater than zero`;
-        msgs[2].style.display = "block";
-        alertWindow.append(msgs[2]);
-    }else {
-        msgs[2].style.display = "none";
-        canSubmit = 1;
-        
-    }
-}
-function numAdultsCheck(){
-    numRoomsCheck();
-    if(noOfAdults < 0 ){
-        canSubmit = -1;
-        msgs[6].innerText = `Number of ِadults should be greater than zero`;
-        msgs[6].style.display = "block";
-        alertWindow.append(msgs[6]);
-    }else {
-        msgs[6].style.display = "none";
-        canSubmit = 1;
-        
+    if(counter === 9){
+        successbooking.style.display = "block";        
     }
 }
