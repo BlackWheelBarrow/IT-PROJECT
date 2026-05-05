@@ -76,14 +76,16 @@ button:hover{
     border-radius : 10px;
 }
 .errorssignup span {
-    padding: 3px 10px;;
     display : block;
+    padding: 3px 10px;
 }
 #error1,#error2,#error3,#error4,#emexist{
     display : none;
 }
 #succes{
+    border-radius : 10px;
     background-color: #519460;
+    padding: 3px 10px;
     color : white;
     display : none;
 }
