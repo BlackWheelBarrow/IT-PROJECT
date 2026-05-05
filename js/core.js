@@ -40,6 +40,7 @@ function signup(name, email, password, confirmpass, number) {
     if (!name || !email || !password || !confirmpass || !number) {
         document.getElementById('error1').style.display = "block";
         err = true;
+        return;
     }
     
     if (!(email.includes('@')) || !(email.includes('.')) || email.indexOf===0) { // validating the email
