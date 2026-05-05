@@ -37,6 +37,8 @@ function signup(name, email, password, confirmpass, number) {
     document.getElementById('error2').style.display = "none";
     document.getElementById('error3').style.display = "none";
     document.getElementById('error4').style.display = "none";
+    document.getElementById('emexist').style.display = "block"; 
+    document.getElementById('succes').style.display = "block";
     if (!name || !email || !password || !confirmpass || !number) {
         document.getElementById('error1').style.display = "block";
         err = true;
@@ -74,7 +76,7 @@ function signup(name, email, password, confirmpass, number) {
         document.getElementById('succes').style.display = "block";
         setTimeout(() => {
             window.location.href = "profile.html"
-        }, 2000);
+        }, 1000);
        
     }
     }
