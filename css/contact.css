@@ -30,7 +30,7 @@ label {
 .user{
     padding: 35px;
     background-color: rgb(254, 254, 254);
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.05s;
     width : 50%;
     box-shadow: 0 0 25px 2px black;
