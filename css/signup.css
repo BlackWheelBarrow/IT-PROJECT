@@ -79,8 +79,12 @@ button:hover{
     padding: 3px 10px;;
     display : block;
 }
-#error1,#error2,#error3,#error4 {
+#error1,#error2,#error3,#error4,emexist{
     display : none;
+}
+#succes{
+    background-color: #519460;
+    color : white;
 }
 @media screen and (max-width : 768px ){
     .sign {
