@@ -87,6 +87,27 @@ footer {
 .firstRow {
     border-radius : 0px;
 }
+.errorscontact {
+    background-color : rgb(153, 107, 107);
+    color : white;
+    font-weight : 100;
+    border-radius : 10px;
+    margin-top : 10px;
+}
+.errorscontact span {
+    display : block;
+    padding: 3px 10px;
+}
+#error1cus,#error2cus,#error3cus{
+    display : none;
+}
+#scss{
+    border-radius : 10px;
+    background-color: #519460;
+    padding: 3px 10px;
+    color : white;
+    display : none;
+}
 @media screen and (max-width : 836px ){
     .container{
         padding : 50px 7%;
