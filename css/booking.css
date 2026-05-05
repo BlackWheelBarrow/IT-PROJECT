@@ -29,8 +29,13 @@ input:hover{
 .window {
     width : 35%;
     background-color : white;
-    box-shadow : 0 2px 20px;
+    box-shadow : 0 2px 25px;
     border-radius : 5px;
+    transition: 0.25s;
+}
+.window:hover{
+    transform: translateY(-2px);
+    box-shadow : 0 0 5px 0 black;
 }
 .booking-title {
     font-size : 25px;
@@ -129,12 +134,20 @@ footer {
     transition : 0.3s;
     border-radius : 5px;
 }
-#success {
+#successbooking {
     background-color : rgb(45, 152, 95);
     font-family : font2;
     color : white;
     transition : 0.3s;
     border-radius : 5px;
+}
+#bookingAlerts span,#successbooking{
+    padding :3px 10px;
+    display : none;
+}
+#bookingAlerts,#successbooking {
+    font-size : 12px;
+    font-family : font2;
 }
 form > div > input {
     margin-bottom : 5px;
