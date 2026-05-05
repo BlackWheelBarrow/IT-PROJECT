@@ -166,7 +166,7 @@ function contactusvalidation(name, number, mail, subject, message) {
     document.getElementById('error2cus').style.display = "none";
     document.getElementById('error3cus').style.display = "none";
     if (!name || !number || !mail || !subject || !message) {//checking if all the fields are filled
-        document.getElementById('error1').style.display = "block";
+        document.getElementById('error1cus').style.display = "block";
         error = true;
         return;
     }
