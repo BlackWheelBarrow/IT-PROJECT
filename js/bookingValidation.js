@@ -70,49 +70,41 @@ function bigfunc(){
         firstName.includes(")") || lastName.includes(")") 
       ) {
         bookingerror3.style.display = "block";
-        counter = counter - 1;      
+        counter--;      
     } 
         
         
-    if(noOFNights < 0){
+    if(noOFNights < 0 || noOFNights == 0){
         bookingerror4.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
-    if(rooms < 0){
+    if(rooms < 0 || rooms == 0){
         bookingerror5.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
-    if(children < 0){
+    if(children < 0 || children == 0){
         bookingerror7.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
-    if(adults < 0){
+    if(adults < 0  || adults == 0){
         bookingerror6.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
     
-    if(! (mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) ) && !(mail.length == 0)){
+    if(! (mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) )){
         bookingerror8.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
     
     if(rooms > indvisuals){
         manyroomserror.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
     if(Excpectedminindvisual < indvisuals){
         capacityerror.style.display = "block";        
-        counter = counter - 1;      
+        counter--;      
     }
-    
-    if(
-        firstName.length == 0 && lastName.length == 0 && mail.length == 0
-        && noOFNights.length == 0 && rooms.length == 0 && adults.length == 0 && children.length == 0
-    ){
-        bookingerror9.style.display = "block";  
-        counter = counter - 1;      
-    }
-    if(counter === 9){
+    if(counter == 9){
         successbooking.style.display = "block";        
     }
 }
