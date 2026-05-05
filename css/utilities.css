@@ -96,16 +96,6 @@ header {
     margin-right : auto;
 }
 
-/*The under line >> Utilities Hotel  */
-.content .title .title-upper::after {
-    content: "";
-    position: absolute;
-    left: 15%;
-    bottom: 20px;
-    background-color: #4B6F68;
-    width: 70%;
-    height: 1.5px;
-}
 
 /* Utilities Hotel */
 .content .title .title-upper {
@@ -167,6 +157,7 @@ header {
     box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.57);
     transition: 0.7s;
     font-family : font2;
+    padding : 10px;
 }
 
 /*Div of images & decription */
@@ -186,7 +177,7 @@ header {
 .descri-cabanas {
     background-color: #ffffff;
     width: 46%;
-    height: 200px;
+    height: 270px;
 }
 
 /*Div of description */
