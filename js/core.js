@@ -58,23 +58,35 @@ function signup(name, email, password, confirmpass, number) {
     }
 
     }
-
-
+/*---------------------login page--------------------------------*/
+let loginh4error = document.createElement("h4");
+loginh4error.style.cssText = `
+    padding : 10px 20px;
+    color : #ffffff;
+    font-weight : 200;
+    margin-bottom : 10px;
+    border-radius : 10px;
+`;
+let loginWindow  = document.getElementById("loginerror");
+let loginerrortext = [
+    "both fields are required",
+    "wrong email or password",
+    "Invalid mail"
+];
 function login(email, password) {
-        if (!email || !password) {
-            window.alert("both fields are required");
-        }
-        else if (users[email] && users[email].password === password) {
-            localStorage.setItem('currentuser', JSON.stringify(users[email]));
-            window.location.href = "profile.html";
-        }
-        else {
-            window.alert("wrong email or password");
-        }
-
-
-
+    if (!email || !password) {
+        loginh4error.innerText = loginerrortext[0];
+        loginWindow.append(loginh4error);
     }
+    else if (users[email] && users[email].password === password) {
+        localStorage.setItem('currentuser', JSON.stringify(users[email]));
+        window.location.href = "profile.html";
+    }
+    else {
+        loginh4error.innerText = loginerrortext[1];
+        loginWindow.append(loginh4error);
+    }
+}
 
 function profileUpdate() {
     const currentuser = JSON.parse(localStorage.getItem('currentuser'));
@@ -108,6 +120,7 @@ function backbutton(){
     mobilenav.style.display = "none";
 }
 
+/*-----------------------------audio----------------------*/
 let playbutton = document.getElementById("playbutton");
 let pausebutton = document.getElementById("pausebutton");
 function audioplay() {
@@ -124,6 +137,7 @@ function audiopause() {
     pausebutton.style.display = "block";
 }
 
+/*-----------------------contact us---------------------------*/
 function contactusvalidation(name,number,mail,subject,message) {
     if (!name || !number || !mail || !subject || !message) {
         window.alert("all fields are required"); //checking if tall the fields are filled
