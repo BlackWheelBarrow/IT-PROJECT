@@ -60,7 +60,7 @@ function signup(name, email, password, confirmpass, number) {
     if (users[email] && !err) {//if the email exist
         document.getElementById('emexist').style.display = "block"; 
         setTimeout(() => {
-            window.location.href = "login.html"
+            window.location.href = "login.html";
         }, 1000);
         return;
     }
@@ -75,7 +75,7 @@ function signup(name, email, password, confirmpass, number) {
         localStorage.setItem('currentuser', JSON.stringify(users[email]));
         document.getElementById('succes').style.display = "block";
         setTimeout(() => {
-            window.location.href = "profile.html"
+            window.location.href = "profile.html";
         }, 1000);
        
     }
