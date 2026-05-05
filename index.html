@@ -17,11 +17,6 @@
             <div class="logo">HOTEL</div>
             <div class="nav">
                 <ul>
-                    <audio id="seasound" src="audio/soundbeach.mp3"></audio>
-                    <button type="button" onclick="audioplay()">play sound</button>
-                    <button type="button" onclick="audiopause()">pause sound</button>
-
-
                     <a href="index.html">
                     <li class="active desktop">home</li></a>
                     <a href="./pages/booking.html">
@@ -65,6 +60,15 @@
             </div>
             <!-- welcoming image section -->
             <div class="hotelImage">
+                <div class="audiobuttons">
+                    <audio id="seasound" src="audio/soundbeach.mp3"></audio>
+                    <button type="button" onclick="audiopause()" id="playbutton" style="display : none">
+                        <i class="fa-solid fa-volume"></i>
+                    </button>
+                    <button type="button" onclick="audioplay()" id="pausebutton">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
                 <video src="Beach.mp4" autoplay muted loop class="backgroundvideos"></video>
                 <div class="welcomeSection">
                     <h2 class="slogan">
