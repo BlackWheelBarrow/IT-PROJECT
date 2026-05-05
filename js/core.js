@@ -37,8 +37,8 @@ function signup(name, email, password, confirmpass, number) {
     document.getElementById('error2').style.display = "none";
     document.getElementById('error3').style.display = "none";
     document.getElementById('error4').style.display = "none";
-    document.getElementById('emexist').style.display = "block"; 
-    document.getElementById('succes').style.display = "block";
+    document.getElementById('emexist').style.display = "none"; 
+    document.getElementById('succes').style.display = "none";
     if (!name || !email || !password || !confirmpass || !number) {
         document.getElementById('error1').style.display = "block";
         err = true;
