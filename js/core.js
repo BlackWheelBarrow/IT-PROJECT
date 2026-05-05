@@ -160,15 +160,26 @@ function audiopause() {
 }
 
 /*-----------------------contact us---------------------------*/
-function contactusvalidation(name,number,mail,subject,message) {
-    if (!name || !number || !mail || !subject || !message) {
-        window.alert("all fields are required"); //checking if tall the fields are filled
+function contactusvalidation(name, number, mail, subject, message) {
+    let error = false;
+    document.getElementById('error1cus').style.display = "none";
+    document.getElementById('error2cus').style.display = "none";
+    document.getElementById('error3cus').style.display = "none";
+    if (!name || !number || !mail || !subject || !message) {//checking if all the fields are filled
+        document.getElementById('error1').style.display = "block";
+        error = true;
+        return;
     }
-    else if (!(mail.toLowerCase().endsWith("@gmail.com"))) {
-            window.alert("please enter a valid email"); //checking if the email is valid
-        }
-    else {
-        window.alert("we got your response and we will reach out to you as soon as possible"); //if the data is correct 
+    if (!(mail.includes('@')) || !(mail.includes('.')) || mail.indexOf === 0) {//checking if the email is valid
+         document.getElementById('error3cus').style.display = "block";
+         error = true; 
+    }
+    if (number.length !== 11 || isNaN(number)) {
+        document.getElementById('error2cus').style.display = "block";
+        error = true;
+    }
+    if (!error) {
+        document.getElementById('scss').style.display = "block";//if the data is correct 
         }
 }
 

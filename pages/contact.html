@@ -60,21 +60,21 @@
                     <div class="user">
                         <form>
                             <label for="name">Full Name :</label>
-                            <input id="name" type="text" required name="name" placeholder="Enter your name">
+                            <input id="name" type="text" name="name" placeholder="Enter your name">
                             <label for="number">Phone Number :</label>
-                            <input id="number" type="text" required name="number" placeholder="Enter your phone number">
+                            <input id="number" type="text"  name="number" placeholder="Enter your phone number">
                             <label for="E-mail">E-mail :</label>
-                            <input id="E-mail" type="email" required name="E-mail" placeholder="Enter your e-mail">
+                            <input id="E-mail" type="email"  name="E-mail" placeholder="Enter your e-mail">
                             <label for="massage">Massage Subject :</label>
-                            <input id="massage" type="text" required name="massage-type" placeholder="Enter a massage type">
+                            <input id="massage" type="text"  name="massage-type" placeholder="Enter a massage type">
                             <label for="mes">Massage :</label>
                             <textarea
                             id="mes"
-                            required
+                            
                             name="massage"
                             placeholder="Enter your comments"
                             ></textarea>
-                            <button type="submit" onclick="contactusvalidation(document.getElementById('name').value,document.getElementById('number').value,document.getElementById('E-mail').value,document.getElementById('massage').value,document.getElementById('mes').value)">Send</button>
+                            <button type="button" onclick="contactusvalidation(document.getElementById('name').value,document.getElementById('number').value,document.getElementById('E-mail').value,document.getElementById('massage').value,document.getElementById('mes').value)">Send</button>
                         </form>
                     </div>
                 </div>
