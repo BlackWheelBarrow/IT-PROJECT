@@ -59,7 +59,7 @@
                     </div>
                     <div class="user">
                         <form>
-                            <label for="name">Full Name :</label>
+                            <label for="name">Name :</label>
                             <input id="name" type="text" name="name" placeholder="Enter your name">
                             <label for="number">Phone Number :</label>
                             <input id="number" type="text"  name="number" placeholder="Enter your phone number">
@@ -70,10 +70,19 @@
                             <label for="mes">Massage :</label>
                             <textarea
                             id="mes"
-                            
                             name="massage"
                             placeholder="Enter your comments"
                             ></textarea>
+                            <div class="errorscontact">
+                                <span id="error1cus">all fields are required</span>
+                                <span id="error2cus">please enter a valid phone number</span>
+                                <span id="error3cus">
+                                   please enter a valid email 
+                                </span>
+                            </div>
+                            <div id="scss">
+                                we recieved your response and we will reach out to you as soon as possible 
+                            </div>
                             <button type="button" onclick="contactusvalidation(document.getElementById('name').value,document.getElementById('number').value,document.getElementById('E-mail').value,document.getElementById('massage').value,document.getElementById('mes').value)">Send</button>
                         </form>
                     </div>
