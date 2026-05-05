@@ -9,6 +9,7 @@ function bigfunc(){
     let rooms = document.getElementById("rooms").value;
     let adults = document.getElementById("adults").value;
     let children = document.getElementById("children").value;
+    let thedate = document.getElementById("arivalDate").value;
     
     let roomlimit = 2;
     let Excpectedminindvisual = roomlimit * rooms;
@@ -102,6 +103,10 @@ function bigfunc(){
     }
     if(Excpectedminindvisual < indvisuals){
         capacityerror.style.display = "block";        
+        counter--;      
+    }
+    if(thedate ==  ""){
+        bookingerror9.style.display = "block";        
         counter--;      
     }
     if(counter == 9){
