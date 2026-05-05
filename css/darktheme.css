@@ -229,3 +229,42 @@ h2 ,ul li{
 .audiobuttons button:hover {
     background-color : #334862;
 }
+.text-utilities {
+    color : white;
+}
+.title , .title-section {
+    color : #cecece;
+}
+.title {
+    background-color: goldenrod;
+    
+}
+.title-section {
+    border-bottom: #ffffff 3px solid;
+}
+.descri, .descri2, .descri-gym, .descri-roof, .descri-sea, .descri-spa, .descri-cabanas {
+    color : white;
+    background-color: rgb(45, 58, 78);
+}
+.utilities_table th {
+    border : none;
+    background-color: rgb(45, 58, 78);
+    color: #D9BB80;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.utilities_table {
+    background-color: rgb(61, 79, 106);
+}
+.utilities_table td{
+    color : white
+}
+.utilities_table tbody tr:nth-child(2),
+.utilities_table tbody tr:nth-child(4),
+.utilities_table tbody tr:nth-child(6) {
+    background-color: rgb(64, 85, 116);
+}
+.rest1, .rest2, .beach, .gym, .spa, .roof, .cabanas{
+    background-color: goldenrod;
+}
