@@ -69,6 +69,26 @@ button:hover{
     background-color :#456962;
     transform: translateY(-3px);
 }
+.errorssignup{
+    background-color : rgb(153, 107, 107);
+    color : white;
+    font-weight : 100;
+    border-radius : 10px;
+}
+.errorssignup span {
+    display : block;
+    padding: 3px 10px;
+}
+#error1,#error2,#error3,#error4,#emexist{
+    display : none;
+}
+#succes{
+    border-radius : 10px;
+    background-color: #519460;
+    padding: 3px 10px;
+    color : white;
+    display : none;
+}
 @media screen and (max-width : 768px ){
     .sign {
         margin : 40px 10%;

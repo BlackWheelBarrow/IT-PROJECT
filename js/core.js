@@ -32,17 +32,39 @@ window.addEventListener('load', function () {
 */
 const users = JSON.parse(localStorage.getItem('users')) || {};
 function signup(name, email, password, confirmpass, number) {
+    let err = false;
+    document.getElementById('error1').style.display = "none";
+    document.getElementById('error2').style.display = "none";
+    document.getElementById('error3').style.display = "none";
+    document.getElementById('error4').style.display = "none";
+    document.getElementById('emexist').style.display = "block"; 
+    document.getElementById('succes').style.display = "block";
     if (!name || !email || !password || !confirmpass || !number) {
-        window.alert("all fields are required");
+        document.getElementById('error1').style.display = "block";
+        err = true;
+        return;
     }
-    else if (users[email]) {
-        window.alert("email already exists");
-        window.location.href = "login.html";
+    
+    if (!(email.includes('@')) || !(email.includes('.')) || email.indexOf===0) { // validating the email
+        document.getElementById('error2').style.display = "block";
+        err = true;
     }
-    else if (!(email.toLowerCase().endsWith("@gmail.com"))) { // validating the email
-        window.alert("please enter a valid email");
+    if (number.length !== 11 || isNaN(number)) {
+        document.getElementById('error4').style.display = "block";
+        err = true;
     }
-    else if (password === confirmpass) {
+    if (password !== confirmpass) {//validating the passwords
+        document.getElementById('error3').style.display = "block";
+        err = true;
+    }
+    if (users[email] && !err) {//if the email exist
+        document.getElementById('emexist').style.display = "block"; 
+        setTimeout(() => {
+            window.location.href = "login.html"
+        }, 1000);
+        return;
+    }
+    if (!err) { //if the signup is successfull
         users[email] = {
             name: name,
             email: email,
@@ -51,12 +73,12 @@ function signup(name, email, password, confirmpass, number) {
         };
         localStorage.setItem('users', JSON.stringify(users));
         localStorage.setItem('currentuser', JSON.stringify(users[email]));
-        window.location.href = "profile.html";
+        document.getElementById('succes').style.display = "block";
+        setTimeout(() => {
+            window.location.href = "profile.html"
+        }, 1000);
+       
     }
-    else if (password !== confirmpass) {//validating the passwords
-        window.alert("passwords don't match");
-    }
-
     }
 /*---------------------login page--------------------------------*/
 let loginh4error = document.createElement("h4");
@@ -149,3 +171,4 @@ function contactusvalidation(name,number,mail,subject,message) {
         window.alert("we got your response and we will reach out to you as soon as possible"); //if the data is correct 
         }
 }
+
