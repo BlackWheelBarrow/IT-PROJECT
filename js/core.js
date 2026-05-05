@@ -108,15 +108,20 @@ function backbutton(){
     mobilenav.style.display = "none";
 }
 
-
+let playbutton = document.getElementById("playbutton");
+let pausebutton = document.getElementById("pausebutton");
 function audioplay() {
     let x = document.getElementById("seasound");
     x.play();
+    playbutton.style.display = "block";
+    pausebutton.style.display = "none";
 }
 
 function audiopause() {
     let x = document.getElementById("seasound");
     x.pause();
+    playbutton.style.display = "none";
+    pausebutton.style.display = "block";
 }
 
 function contactusvalidation(name,number,mail,subject,message) {
