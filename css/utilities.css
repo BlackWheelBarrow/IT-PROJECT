@@ -629,6 +629,15 @@ i {
 .timetableheaderfortable {
     margin-left: 50px;
 }
+.firsttablerow,
+.secondtablerow,
+.thirdtablerow,
+.fourthtablerow,
+.fifthtablerow,
+.sixthtablerow,
+.seventhtablerow{
+    transition: 0.2s;
+}
 
 .firsttablerow:hover {
     background: url('../imgs/restaurent.1_table.jpeg');
