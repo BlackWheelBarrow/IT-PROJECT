@@ -621,27 +621,77 @@ i {
     font-size: 20px;
     text-align: center;
 }
+
 .first-para {
     color: goldenrod;
 }
 
-.timetableheaderfortable{
+.timetableheaderfortable {
     margin-left: 50px;
 }
-@media screen and (max-width : 1312px) {
-    .rest1, .rest2,
-    .beach, .gym, .spa, .roof, .cabanas,.utilities_table {
-        width: 70%;
-        margin-left : auto ;
-        margin-right : auto ;
-    }
-    .title-section {
-        margin-left : 15%;
-    }
-    .second-para {
-        width : 70%;
-        margin: auto;
-    }
+
+.firsttablerow:hover {
+    background: url('../imgs/restaurent.1_table.jpeg');
+}
+
+.secondtablerow:hover {
+    background: url('../imgs/restaurent.2_table.jpeg');
+}
+
+.thirdtablerow:hover {
+    background: url('../imgs/beach_table.jpeg');
+}
+
+.fourthtablerow:hover {
+    background: url('../imgs/gym_table.jpeg');
+}
+
+.fifthtablerow:hover {
+    background: url('../imgs/spa_table.jpeg');
+}
+
+.sixthtablerow:hover {
+    background: url('../imgs/Rooftop_table.jpeg');
+}
+
+.seventhtablerow:hover {
+    background: url('../imgs/private\ cabanas_table.jpeg');
+}
+
+.firsttablerow:hover,
+.firsttablerow:hover td
+{
+color: white;
+}
+.secondtablerow:hover,
+.secondtablerow:hover td
+{
+color: white;
+}
+.thirdtablerow:hover,
+.thirdtablerow:hover td
+{
+color: white;
+}
+.fourthtablerow:hover,
+.fourthtablerow:hover td
+{
+color: white;
+}
+.fifthtablerow:hover,
+.fifthtablerow:hover td
+{
+color: white;
+}
+.sixthtablerow:hover,
+.sixthtablerow:hover td
+{
+color: white;
+}
+.seventhtablerow:hover,
+.seventhtablerow:hover td
+{
+color: white;
 }
 @media screen and (max-width : 740px) {
     .rest1, .rest2,
