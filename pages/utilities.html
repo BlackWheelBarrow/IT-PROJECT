@@ -5,192 +5,198 @@
     <title>Utilities</title>
     <link rel="stylesheet" href="../css/utilities.css">
     <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" id="theme">
+    
     <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
     <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/otherLDthemes.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">VOTEL HOTEL</div>
-        <div class="nav">
-            <ul>
-                <a href="../index.html">
-                    <li class="active desktop">Home</li>
-                </a>
-                <a href="./booking.html">
-                    <li class="desktop">Booking</li>
-                </a>
-                <a href="./utilities.html">
-                    <li class="desktop hide">Utilities</li>
-                </a>
-                <a href="./Rooms.html">
-                    <li class="desktop">Rooms</li>
-                </a>
-                <a href="./aboutus.html">
-                    <li class="desktop">About us</li>
-                </a>
-                <a href="./profile.html">
-                    <li class="desktop">Profile</li>
-                </a>
-                <div class="theme">
-                    <img src="../imgs/sun.png" class="src">
-                    <img src="../imgs/moon.png" class="src">
-                </div>
-                <a href="listForMobile">
-                    <li class="listForMobile">
-                        <i class="lni lni-menu-hamburger-1"></i>
-                    </li>
-                </a>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class="content">
+        <header>
+            <div class="logo">HOTEL</div>
+            <div class="nav">
+                 <ul>
+                    <a href="../index.html"><li class="desktop">home</li></a>
+                    <a href="./booking.html"><li class="desktop">booking</li></a>
+                    <a href=""><li class="desktop hide">Utilities</li></a>
+                    <a href="./Rooms.html"><li class="desktop">Rooms</li></a>
+                    <a href="./aboutus.html"><li class="active desktop hide">about us</li></a>
+                    <a href="./profile.html"><li class="desktop">Profile</li></a>
+                    <div class="theme">
+                        <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+                    </div>
+                    <a onclick="shownav()">
+                        <li class="listForMobile">
+                            <i class="lni lni-menu-hamburger-1"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="navlistformobile" id="navformobile">
+                    <a onclick="backbutton()" style="border-radius : 10px;border : solid 1px #D9BB80; margin:10px 30%"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    <div class="themenavmobile">
+                        <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+                    </div>
+                    <a href="../index.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">home</li></a>
+                    <a href="booking.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">booking</li></a>
+                <a href=""><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Utilities</li></a>
+                <a href="./Rooms.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Rooms</li></a>
+                <a href="contact.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">contact us</li></a>
+                <a href="aboutus.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">about us</li></a>
+                <a href="profile.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Profile</li></a>
+                <a href="login.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">login</li></a>
+                <a href="signup.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">sign up</li></a>
+            </div>
             <div class="img-foot"></div>
-            <div class="title">
-                <p class="title-upper"> Utilities Hotel </p>
-                <p class="title-small">Moments of comfort start here</p>
-            </div>
-            <div class="text-utilities">
-                <p class="first-para">
-                    Redefining the Art of Living
-                </p>
-                <p class="second-para">
-                    Embrace an elevated lifestyle through a curated selection of premium hotel utilities,<br> where
-                    modern comfort meets refined design,<br> delivering a seamless experience tailored to your highest
-                    standards.
-                </p>
-
-            </div>
-            <!--Restaurant-->
-            <h2 class="title-section">Restaurant</h2>
-            <div class="rest1">
-                <div class="img"></div>
-                <div class="descri">
-                    <p class="para-rest1">
-                        A serene retreat within a bustling city,<br><br>our hotel restaurant offers a peaceful, refined
-                        atmosphere where every element of the menu and decor showcases exquisite taste.
+            <div class="content">
+                <div class="title">
+                    <p class="title-upper">Utilities</p>
+                </div>
+                <div class="text-utilities">
+                    <p class="first-para">
+                        Redefining the Art of Living
                     </p>
-                    <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                </div>
-            </div>
-            <!--Restaurant-->
-            <h2 class="title-section">Restaurant</h2>
-            <div class="rest2">
-                <div class="descri2">
-                    <p class="para-rest2">In the quiet city, at the heart of elegance,<br><br> we offer carefully
-                        selected dishes in a serene atmosphere, perfect for lovers of comfort and refined taste.</p>
-                    <p class="rating2">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                </div>
-                <div class="img2"></div>
+                    <p class="second-para">
+                        Embrace an elevated lifestyle through a curated selection of premium hotel utilities,where
+                        modern comfort meets refined design,delivering a seamless experience tailored to your highest
+                        standards.
+                    </p>
 
-            </div>
-            <!--Beach-->
-            <h2 class="title-section">Beach</h2>
-            <div class="beach">
-                <div class="img-sea"></div>
-                <div class="descri-sea">
-                    <p class="para-sea">Relax on our private beach,<br><br> where golden sunsets meet gentle waves-just
-                        steps from the comfort and luxury of our hotel.</p>
-                    <p class="rating-sea">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                </div>
+                <!--Restaurant-->
+                <h2 class="title-section">Restaurant</h2>
+                <div class="rest1">
+                    <div class="img"></div>
+                    <div class="descri">
+                        <p class="para-rest1">
+                            A serene retreat within a bustling city,<br><br>our hotel restaurant offers a peaceful, refined
+                            atmosphere where every element of the menu and decor showcases exquisite taste.
+                        </p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </div>
+                </div>
+                <!--Restaurant-->
+                <h2 class="title-section">Restaurant</h2>
+                <div class="rest2">
+                    <div class="descri2">
+                        <p class="para-rest2">In the quiet city, at the heart of elegance,<br><br> we offer carefully
+                            selected dishes in a serene atmosphere, perfect for lovers of comfort and refined taste.</p>
+                        <p class="rating2">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                    <div class="img2"></div>
+
+                </div>
+                <!--Beach-->
+                <h2 class="title-section">Beach</h2>
+                <div class="beach">
+                    <div class="img-sea"></div>
+                    <div class="descri-sea">
+                        <p class="para-sea">Relax on our private beach,<br><br> where golden sunsets meet gentle waves-just
+                            steps from the comfort and luxury of our hotel.</p>
+                        <p class="rating-sea">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                </div>
+                <!--GYM-->
+                <h2 class="title-section">GYM</h2>
+                <div class="gym">
+                    <div class="descri-gym">
+                        <p class="para-gym">Enjoy a luxurious fitness experience at our hotel,<br><br> where elegance meets
+                            strength in a space designed to renew your energy and enhance your sense of belonging at every
+                            moment.</p>
+                        <p class="rating-gym">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </div>
+                    <div class="img-gym"></div>
+                </div>
+                <!--SPA-->
+                <h2 class="title-section">Spa</h2>
+                <div class="spa">
+                    <div class="img-spa"></div>
+                    <div class="descri-spa">
+                        <p class="para-spa">Enjoy a luxurious spa experience,<br><br> designed to give you the ultimate
+                            relaxation and comfort in a serene atmosphere that reflects the hotel’s elegance.</p>
+                        <p class="rating-spa">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </div>
+                </div>
+                <!--Rooftop-->
+                <h2 class="title-section">Rooftop</h2>
+                <div class="roof">
+                    <div class="descri-roof">
+                        <p class="para-roof">Enjoy the atmosphere of the luxurious rooftop lounge,<br><br> where stunning
+                            views blend with moments of relaxation at the heart of the hotel.</p>
+                        <p class="rating-roof">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                    <div class="img-roof"></div>
+                </div>
+                <!--Cabanas-->
+                <h2 class="title-section">Private Cabanas</h2>
+                <div class="cabanas">
+                    <div class="img-cabanas"></div>
+                    <div class="descri-cabanas">
+                        <p class="para-cabanas">Experience the private cabanas on the beach,<br><br> where complete privacy
+                            blends with the calm of the sea and a touch of refined luxury.</p>
+                        <p class="rating-cabanas">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
                 </div>
             </div>
-            <!--GYM-->
-            <h2 class="title-section">GYM</h2>
-            <div class="gym">
-                <div class="descri-gym">
-                    <p class="para-gym">Enjoy a luxurious fitness experience at our hotel,<br><br> where elegance meets
-                        strength in a space designed to renew your energy and enhance your sense of belonging at every
-                        moment.</p>
-                    <p class="rating-gym">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                </div>
-                <div class="img-gym"></div>
-            </div>
-            <!--SPA-->
-            <h2 class="title-section">Spa</h2>
-            <div class="spa">
-                <div class="img-spa"></div>
-                <div class="descri-spa">
-                    <p class="para-spa">Enjoy a luxurious spa experience,<br><br> designed to give you the ultimate
-                        relaxation and comfort in a serene atmosphere that reflects the hotel’s elegance.</p>
-                    <p class="rating-spa">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                </div>
-            </div>
-            <!--Rooftop-->
-            <h2 class="title-section">Rooftop</h2>
-            <div class="roof">
-                <div class="descri-roof">
-                    <p class="para-roof">Enjoy the atmosphere of the luxurious rooftop lounge,<br><br> where stunning
-                        views blend with moments of relaxation at the heart of the hotel.</p>
-                    <p class="rating-roof">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                </div>
-                <div class="img-roof"></div>
-            </div>
-            <!--Cabanas-->
-            <h2 class="title-section">Private Cabanas</h2>
-            <div class="cabanas">
-                <div class="img-cabanas"></div>
-                <div class="descri-cabanas">
-                    <p class="para-cabanas">Experience the private cabanas on the beach,<br><br> where complete privacy
-                        blends with the calm of the sea and a touch of refined luxury.</p>
-                    <p class="rating-cabanas">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                </div>
-            </div>
-        </div>
-        <table class="utilities_table">
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Description</th>
-                    <th>Rating</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Restaurant 1</td>
-                    <td>A serene retreat within a bustling city, our hotel restaurant offers a peaceful, refined
-                        atmosphere where every element of the menu and decor showcases exquisite taste.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
-                </tr>
-                <tr>
-                    <td>Restaurant 2</td>
-                    <td>In the quiet city, at the heart of elegance, we offer carefully selected dishes in a serene
-                        atmosphere, perfect for lovers of comfort and refined taste.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                </tr>
-                <tr>
-                    <td>Beach</td>
-                    <td>Relax on our private beach, where golden sunsets meet gentle waves-just steps from the comfort
-                        and luxury of our hotel.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                </tr>
-                <tr>
-                    <td>GYM</td>
-                    <td>Enjoy a luxurious fitness experience at our hotel, where elegance meets strength in a space
-                        designed to renew your energy and enhance your sense of belonging at every moment.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
-                </tr>
-                <tr>
-                    <td>Spa</td>
-                    <td>Enjoy a luxurious spa experience, designed to give you the ultimate relaxation and comfort in a
-                        serene atmosphere that reflects the hotel’s elegance.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
-                </tr>
-                <tr>
-                    <td>Rooftop</td>
-                    <td>Enjoy the atmosphere of the luxurious rooftop lounge, where stunning views blend with moments of
-                        relaxation at the heart of the hotel.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                </tr>
-                <tr>
-                    <td>Private Cabanas</td>
-                    <td>Experience the private cabanas on the beach, where complete privacy blends with the calm of the
-                        sea and a touch of refined luxury.</td>
-                    <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="utilities_table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Restaurant 1</td>
+                        <td>A serene retreat within a bustling city, our hotel restaurant offers a peaceful, refined
+                            atmosphere where every element of the menu and decor showcases exquisite taste.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                    </tr>
+                    <tr>
+                        <td>Restaurant 2</td>
+                        <td>In the quiet city, at the heart of elegance, we offer carefully selected dishes in a serene
+                            atmosphere, perfect for lovers of comfort and refined taste.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                    </tr>
+                    <tr>
+                        <td>Beach</td>
+                        <td>Relax on our private beach, where golden sunsets meet gentle waves-just steps from the comfort
+                            and luxury of our hotel.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                    </tr>
+                    <tr>
+                        <td>GYM</td>
+                        <td>Enjoy a luxurious fitness experience at our hotel, where elegance meets strength in a space
+                            designed to renew your energy and enhance your sense of belonging at every moment.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                    </tr>
+                    <tr>
+                        <td>Spa</td>
+                        <td>Enjoy a luxurious spa experience, designed to give you the ultimate relaxation and comfort in a
+                            serene atmosphere that reflects the hotel’s elegance.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                    </tr>
+                    <tr>
+                        <td>Rooftop</td>
+                        <td>Enjoy the atmosphere of the luxurious rooftop lounge, where stunning views blend with moments of
+                            relaxation at the heart of the hotel.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                    </tr>
+                    <tr>
+                        <td>Private Cabanas</td>
+                        <td>Experience the private cabanas on the beach, where complete privacy blends with the calm of the
+                            sea and a touch of refined luxury.</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                    </tr>
+                </tbody>
+            </table>
     </main>
     <footer>
         <div class="firstRow">
@@ -294,6 +300,6 @@
             </div>
         </div>
     </footer>
-    <script src="../js/Core.js"></script>
-    <script src="../js/otherCore.js"></script>
+    <script src="../js/core.js"></script>
 </body>
+</html>
