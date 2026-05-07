@@ -265,6 +265,12 @@ h2 ,ul li{
 .utilities_table tbody tr:nth-child(6) {
     background-color: rgb(64, 85, 116);
 }
+.utilities_table tbody tr:nth-child(1),
+.utilities_table tbody tr:nth-child(3),
+.utilities_table tbody tr:nth-child(5),
+.utilities_table tbody tr:nth-child(7) {
+    background-color: #3F506B;
+}
 .rest1, .rest2, .beach, .gym, .spa, .roof, .cabanas{
     background-color: goldenrod;
 }
