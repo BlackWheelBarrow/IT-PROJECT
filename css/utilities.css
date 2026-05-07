@@ -654,44 +654,53 @@ i {
     background: url('../imgs/Rooftop_table.jpeg');
 }
 
+.seventhtablerow {
+    transition: 1s ease;
+}
+
 .seventhtablerow:hover {
     background: url('../imgs/private\ cabanas_table.jpeg');
 }
 
 .firsttablerow:hover,
-.firsttablerow:hover td
-{
-color: white;
+.firsttablerow:hover td {
+    color: white;
 }
+
 .secondtablerow:hover,
-.secondtablerow:hover td
-{
-color: white;
+.secondtablerow:hover td {
+    color: white;
 }
+
 .thirdtablerow:hover,
-.thirdtablerow:hover td
-{
-color: white;
+.thirdtablerow:hover td {
+    color: white;
 }
+
 .fourthtablerow:hover,
-.fourthtablerow:hover td
-{
-color: white;
+.fourthtablerow:hover td {
+    color: white;
 }
+
 .fifthtablerow:hover,
-.fifthtablerow:hover td
-{
-color: white;
+.fifthtablerow:hover td {
+    color: white;
 }
+
 .sixthtablerow:hover,
-.sixthtablerow:hover td
-{
-color: white;
+.sixthtablerow:hover td {
+    color: white;
 }
+
 .seventhtablerow:hover,
-.seventhtablerow:hover td
-{
-color: white;
+.seventhtablerow:hover td {
+    color: white;
+}
+
+.utilities_table tbody tr {
+    transition: 1s ease;
+    background-size: cover;
+    background-position: center;
 }
 @media screen and (max-width : 740px) {
     .rest1, .rest2,
