@@ -271,3 +271,10 @@ h2 ,ul li{
 .rest1, .rest2, .beach, .gym, .spa, .roof, .cabanas{
     background-color: goldenrod;
 }
+.logIn:hover,
+.signUp:hover,
+button:hover
+{
+    background-color :rgb(210, 164, 71);
+    color: rgb(0, 0, 0);
+}
