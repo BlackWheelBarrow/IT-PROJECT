@@ -97,8 +97,7 @@ button:hover{
     margin-top : 15px;
     display : block;
     color : white;
-    box-shadow: 0 0 5px 25px  #4B6F68 inset;
-    transform: translateY(-3px);
+    background-color : #4B6F68;
 }
 h1 {
     font-size : 33px;
