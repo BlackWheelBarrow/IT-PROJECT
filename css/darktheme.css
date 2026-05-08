@@ -250,9 +250,6 @@ h2 ,ul li{
     border : none;
     background-color: rgb(45, 58, 78);
     color: #D9BB80;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 .utilities_table {
     background-color: rgb(61, 79, 106);
