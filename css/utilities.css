@@ -579,13 +579,23 @@ i {
     background-color: #ffffff;
     box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
+    table-layout : fixed;
+    border-radius : 10px;
 }
 
 .utilities_table th {
+    padding: 18px 24px;
     text-align: center;
 }
-
+.utilities_table th {
+    border : none;
+    color: #D9BB80;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 .utilities_table td {
+    padding: 18px 24px;
     text-align: center;
 }
 
@@ -594,6 +604,7 @@ i {
     color: #D9BB80;
     font-size: 24px;
     letter-spacing: 2px;
+
 }
 
 .utilities_table tbody tr:nth-child(2),
@@ -609,7 +620,9 @@ i {
 
 .utilities_table td {
     color: #333333;
-    font-size: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    padding : 10 24px;
 }
 
 .utilities_table td:last-child {
@@ -622,6 +635,9 @@ i {
     color: goldenrod;
 }
 
+.timetableheaderfortable {
+    margin-left: 50px;
+}
 
 .firsttablerow:hover {
     background: url('../imgs/restaurent.1_table.jpeg');
@@ -695,7 +711,7 @@ i {
     background-size: cover;
     background-position: center;
 }
-@media screen and (max-width : 1106px) {
+@media screen and (max-width : 980px) {
     .rest1, .rest2,
     .beach, .gym, .spa, .roof, .cabanas,.utilities_table {
         width: 70%;
@@ -705,23 +721,22 @@ i {
     .title-section {
         margin-left : 15%;
     }
-    .second-para {
-        width : 80%;
-        margin: auto;
+    .utilities_table td,.utilities_table th{
+        font-size : 18px;
     }
-    .first-para {
-        font-size : 45px;
+    .utilities_table i {
+        font-size : 15px;
     }
 }
 @media screen and (max-width : 800px) {
     .rest1, .rest2,
     .beach, .gym, .spa, .roof, .cabanas,.utilities_table {
-        width: 90%;
+        width: 80%;
         margin-left : auto ;
         margin-right : auto ;
     }
     .title-section {
-        margin-left : 5%;
+        margin-left : 10%;
     }
     .second-para {
         width : 80%;
@@ -730,14 +745,75 @@ i {
     .first-para {
         font-size : 40px;
     }
+    .utilities_table td,.utilities_table th{
+        padding : 5px;
+        font-size : 16px;
+    }
+    .utilities_table i {
+        font-size : 12px;
+    }
 }
-@media screen and (max-width : 596px) {
-    .utilities_table td,.utilities_table td i{
-        font-size : 5px;
+@media screen and (max-width : 680px) {
+    .rest1, .rest2,
+    .beach, .gym, .spa, .roof, .cabanas,.utilities_table {
+        font-size : 10px;
+        
+    }
+    .img,
+    .img2,
+    .img-gym,
+    .img-roof,
+    .img-sea,
+    .img-spa,
+    .img-cabanas{
+        width: 30%;
+    }
+    .descri,
+    .descri2,
+    .descri-gym,
+    .descri-roof,
+    .descri-sea,
+    .descri-spa,
+    .descri-cabanas {
+        width: 70%;
+    }
+}
+@media screen and (max-width : 560px) {
+    .second-para {
+        width : 80%;
+        margin: auto;
+    }
+    .first-para {
+        font-size : 30px;
+    }
+        .second-para {
+        width : 80%;
+        margin: auto;
+        font-size : 20px;
+    }
+}
+@media screen and (max-width : 480px) {
+    .content .title .title-upper {
+        font-size: 25px;
+        
     }
     .utilities_table {
-        width: 80%;
-        margin-left : auto ;
-        margin-right : 0 ;
+        padding : 0px;
+    }
+    .utilities_table td,.utilities_table th{
+        font-size : 12px;
+        padding : 5px;
+    }
+    .utilities_table i {
+        font-size : 8px;
+    }
+    .rating-roof {
+        font-size : 15px;
+    }
+    .first-para {
+        font-size : 25px;
+    }
+    .second-para {
+        font-size : 15px;
     }
 }
