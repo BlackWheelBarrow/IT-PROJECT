@@ -26,6 +26,9 @@ function bigfunc(){
     let bookingerror7 = document.getElementById("bookingerror7");
     let bookingerror8 = document.getElementById("bookingerror8");
     let bookingerror9 = document.getElementById("bookingerror9");
+    let bookingerror10 = document.getElementById("bookingerror10");
+    let bookingerror11 = document.getElementById("bookingerror11");
+    let bookingerror12 = document.getElementById("bookingerror12");
     let indvisualserror = document.getElementById("indvisualserror");
     let capacityerror = document.getElementById("capacityerror");
     let manyroomserror = document.getElementById("manyroomserror");
@@ -43,20 +46,30 @@ function bigfunc(){
     bookingerror7.style.display = "none";
     bookingerror8.style.display = "none";
     bookingerror9.style.display = "none";
+    bookingerror10.style.display = "none";
+    bookingerror11.style.display = "none";
+    bookingerror12.style.display = "none";
     indvisualserror.style.display = "none";
     capacityerror.style.display = "none";
     manyroomserror.style.display = "none";
     successbooking.style.display = "none";
 
-    if(firstName.length < 3 && !( /\d/.test(firstName) )){ 
+    if(firstName.length < 3 && !( /\d/.test(firstName) ) && firstName != ""){ 
         counter = counter - 1;      
         bookingerror1.style.display = "block";
     } 
-    if(lastName.length < 3 && !( /\d/.test(lastName) )) {
+    if(lastName.length < 3 && !( /\d/.test(lastName) ) && lastName != "") {
          bookingerror2.style.display = "block";
         counter = counter - 1;      
     }
-
+    if(firstName == ""){ 
+        counter = counter - 1;      
+        bookingerror10.style.display = "block";
+    } 
+    if(lastName == "") {
+         bookingerror11.style.display = "block";
+        counter = counter - 1;      
+    }
     if(
         /\d/.test(firstName) ||   /\d/.test(lastName) || 
         firstName.includes("@") || lastName.includes("@") ||
@@ -92,11 +105,14 @@ function bigfunc(){
         counter--;      
     }
     
-    if(! (mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) )){
+    if(! (mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) ) && mail != ""){
         bookingerror8.style.display = "block";        
         counter--;      
     }
-    
+    if(mail == ""){
+        bookingerror12.style.display = "block";        
+        counter--;      
+    }
     if(rooms > indvisuals){
         manyroomserror.style.display = "block";        
         counter--;      
