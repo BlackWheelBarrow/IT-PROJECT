@@ -48,11 +48,11 @@ function bigfunc(){
     manyroomserror.style.display = "none";
     successbooking.style.display = "none";
 
-    if(firstName.length < 3 && !( /\d/.test(firstName) ) && !(firstName.length == 0)){ 
+    if(firstName.length < 3 && !( /\d/.test(firstName) )){ 
         counter = counter - 1;      
         bookingerror1.style.display = "block";
     } 
-    if(lastName.length < 3 && !( /\d/.test(lastName) ) && !(lastName.length == 0)) {
+    if(lastName.length < 3 && !( /\d/.test(lastName) )) {
          bookingerror2.style.display = "block";
         counter = counter - 1;      
     }
@@ -109,7 +109,7 @@ function bigfunc(){
         bookingerror9.style.display = "block";        
         counter--;      
     }
-    if(counter == 9){
+    if(counter == 9 ){
         successbooking.style.display = "block";        
     }
 }
