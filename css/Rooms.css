@@ -322,7 +322,7 @@ firstCard.style.backgroundColor = 'yellow';
         height: 350px;
     }
     #notfound {
-        font-size : 15px;
+        font-size : 25px;
     }
 }
 @media screen and (max-width : 400px){
