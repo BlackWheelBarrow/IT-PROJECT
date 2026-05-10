@@ -250,6 +250,9 @@ h2 ,ul li{
     border : none;
     background-color: rgb(45, 58, 78);
     color: #D9BB80;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .utilities_table {
     background-color: rgb(61, 79, 106);
@@ -262,19 +265,9 @@ h2 ,ul li{
 .utilities_table tbody tr:nth-child(6) {
     background-color: rgb(64, 85, 116);
 }
-.utilities_table tbody tr:nth-child(1),
-.utilities_table tbody tr:nth-child(3),
-.utilities_table tbody tr:nth-child(5),
-.utilities_table tbody tr:nth-child(7) {
-    background-color: #3F506B;
-}
 .rest1, .rest2, .beach, .gym, .spa, .roof, .cabanas{
     background-color: goldenrod;
 }
-.logIn:hover,
-.signUp:hover,
-button:hover
-{
-    background-color :rgb(210, 164, 71);
-    color: rgb(0, 0, 0);
+.searchicon {
+    background-color: rgb(47, 49, 70);
 }
