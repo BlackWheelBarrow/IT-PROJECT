@@ -83,10 +83,17 @@
             <div class="secondSectionTopText">
                 Discover Our Signature Rooms & Suites
             </div>
+            <div class="searchcontainer">
+                <input class="searchinput" id="search" type="search" placeholder="Search">
+                <div class="searchicon" onclick="searchfunc()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div id="notfound">Room Name Not Found</div>
             <div class="cardsParent">
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/firstCardImage.jpg">
-                    <p class="photoName">Signature Loft Penthouse</p>
+                    <p class="photoName roomnames">Signature Loft Penthouse</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> City View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
@@ -94,9 +101,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/seventhCardImage.jpg">
-                    <p class="photoName">Nile Horizon Twin Suite</p>
+                    <p class="photoName roomnames">Nile Horizon Twin Suite</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Nile View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
@@ -104,9 +111,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/cardThirdImage.jpg">
-                    <p class="photoName">Azure Oceanfront Retreat</p>
+                    <p class="photoName roomnames">Azure Oceanfront Retreat</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Ocean View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
@@ -114,9 +121,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/fourthCardImage.jpg">
-                    <p class="photoName">Terrace Sea View Retreat</p>
+                    <p class="photoName roomnames">Terrace Sea View Retreat</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Sea View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
@@ -124,9 +131,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/fifthCardImage.jpg">
-                    <p class="photoName">Seaside Twin</p>
+                    <p class="photoName roomnames">Seaside Twin</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Sea View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span>2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
@@ -134,9 +141,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/sixthsCardImage.jpg">
-                    <p class="photoName">Emerald Mountain Suite</p>
+                    <p class="photoName roomnames">Emerald Mountain Suite</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Mountain View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
@@ -144,9 +151,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/cardSecondImage.jpg">
-                    <p class="photoName" style="font-size : 22px;">Golden Wood Atrium Room</p>
+                    <p class="photoName roomnames" style="font-size : 22px;">Golden Wood Atrium Room</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Atrium View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
@@ -154,9 +161,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/eightsCardImage.jpg">
-                    <p class="photoName">The Metropolitan Double</p>
+                    <p class="photoName roomnames">The Metropolitan Double</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Urban View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
@@ -164,9 +171,9 @@
                     <input type="submit" value="Book Now" class="BookBotton"
                         onclick="window.location.href='./booking.html';">
                 </div>
-                <div class="firstCard sameBorder">
+                <div class="firstCard sameBorder cards">
                     <img src="../imgs/ninthImage.jpg">
-                    <p class="photoName">Azure Pool View Double</p>
+                    <p class="photoName roomnames">Azure Pool View Double</p>
                     <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Pool View</p>
                     <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 2</p>
                     <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
@@ -292,6 +299,7 @@
     </footer>
     <script src="../js/Rooms.js"></script>
     <script src="../js/core.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 
 </html>
