@@ -321,6 +321,9 @@ firstCard.style.backgroundColor = 'yellow';
     .biggestDiv {
         height: 350px;
     }
+    #notfound {
+        font-size : 15px;
+    }
 }
 @media screen and (max-width : 400px){
     .firstCard {
@@ -333,4 +336,4 @@ firstCard.style.backgroundColor = 'yellow';
         font-size: 25px;
     }
 }
-@media screen and (max-width : px){
+
