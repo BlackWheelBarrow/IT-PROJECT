@@ -22,6 +22,8 @@
 
 .firstSectionDiv {
     /* background-color: orange; */
+    display : flex;
+    flex-direction : column;
     width: 100%;
     height: 100%;
 }
@@ -306,6 +308,9 @@ firstCard.style.backgroundColor = 'yellow';
         width : 70%;
         margin: 70px 15%;
     }   
+    .firstSectionTitle {
+        font-size : 30px;
+    }
 }
 @media screen and (max-width : 517px){
     .searchcontainer{
