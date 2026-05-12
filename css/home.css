@@ -147,7 +147,8 @@
 .hotelimage {
     width : 60%;
     height : 250px;
-    object-fit : cover;
+    background-size : cover;
+    background-image : url("../imgs/hotelHomePage.jpg")
 }
 .descrption {
     background-color : #eeeeee;
