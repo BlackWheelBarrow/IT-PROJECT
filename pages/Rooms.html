@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rooms</title>
+        <link rel ="icon" type = "img/png" href="../imgs/spa_24dp_78A75A_FILL0_wght400_GRAD0_opsz24.png">
+
+    <link rel="stylesheet" href="../css/Rooms.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" id="theme">
+
+    <link rel="stylesheet" href="../css/regular-lineicons/lineicons-free.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="../js/otherLDthemes.js"></script>
+</head>
+
+<body>
+        <header>
+            <div class="logo">LOTUS</div>
+            <div class="nav">
+                <ul>
+                    <a href="../index.html"><li class="desktop">home</li></a>
+                    <a href="./booking.html"><li class="desktop">booking</li></a>
+                    <a href="./utilities.html"><li class="desktop hide">Utilities</li></a>
+                    <a href="./Rooms.html"><li class="desktop active">Rooms</li></a>
+                    <a href="./aboutus.html"><li class="desktop hide">about us</li></a>
+                    <a href="./profile.html"><li class="desktop">Profile</li></a>
+                    <div class="theme">
+                        <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+                    </div>
+                    <a onclick="shownav()">
+                        <li class="listForMobile">
+                            <i class="lni lni-menu-hamburger-1"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <div class="navlistformobile" id="navformobile">
+            <a onclick="backbutton()" style="border-radius : 10px;border : solid 1px #D9BB80; margin:10px 30%"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="themenavmobile">
+                <img src="../imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                <img src="../imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+            </div>
+            <a href="../index.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">home</li></a>
+            <a href="booking.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">booking</li></a>
+            <a href="./utilities.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Utilities</li></a>
+            <a href="./Rooms.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Rooms</li></a>
+            <a href="contact.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">contact us</li></a>
+            <a href="aboutus.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">about us</li></a>
+            <a href="profile.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Profile</li></a>
+            <a href="login.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">login</li></a>
+            <a href="signup.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">sign up</li></a>
+        </div>
+        <div class="firstSectionDiv">
+            <div class="firstSectionTitle">
+                Experience the Art of Comfort
+            </div>
+            <div class="biggestDiv">
+                <div class="imageParent">
+                    <div class="firstImageInParent onePosition active">
+                        <img src="../imgs/rooms/resepetion.jpg">
+                    </div>
+                    <div class="secondImageInParent onePosition">
+                        <img src="../imgs/rooms/kitchen.jpg">
+                    </div>
+                    <div class="thirdImageInParent onePosition">
+                        <img src="../imgs/rooms/hall.jpg">
+                    </div>
+                    <div class="arrows">
+                        <i class="fa-solid fa-angle-left leftBTN"></i>
+                        <i class="fa-solid fa-angle-right rightBTN"></i>
+                    </div>
+                    <div class="opacityDiv"></div>
+                </div>
+            </div>
+        </div>
+        <div class="secondSectionFirstDiv">
+            <div class="secondSectionTopText">
+                Discover Our Signature Rooms & Suites
+            </div>
+            <div class="searchcontainer">
+                <input class="searchinput" id="search" type="search" placeholder="Search">
+                <div class="searchicon" onclick="searchfunc()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div id="notfound">Room Name Not Found</div>
+            <div class="cardsParent">
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room1.jpg">
+                    <p class="photoName roomnames">Signature Loft Penthouse</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> City View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 250$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room2.jpg">
+                    <p class="photoName roomnames">Nile Horizon Twin Suite</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Nile View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 280$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room3.jpg">
+                    <p class="photoName roomnames">Azure Oceanfront Retreat</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Ocean View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 250$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room4.jpg">
+                    <p class="photoName roomnames">Terrace Sea View Retreat</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Sea View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 290$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room5.jpg">
+                    <p class="photoName roomnames">Seaside Twin</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Sea View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span>2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 270$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room6.jpg">
+                    <p class="photoName roomnames">Emerald Mountain Suite</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Mountain View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 550$ / Night </p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room7.jpg">
+                    <p class="photoName roomnames" style="font-size : 22px;">Golden Wood Atrium Room</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Atrium View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Max.guests:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 150$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room8.jpg">
+                    <p class="photoName roomnames">The Metropolitan Double</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Urban View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 2</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 132$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+                <div class="firstCard sameBorder cards">
+                    <img src="../imgs/rooms/room9.jpg">
+                    <p class="photoName roomnames">Azure Pool View Double</p>
+                    <p class="photoDescribtion View"><span class="goldenSpan">View:</span> Pool View</p>
+                    <p class="photoDescribtion Beds"><span class="goldenSpan">Beds:</span> 2</p>
+                    <p class="photoDescribtion Bath"><span class="goldenSpan">Bathroom:</span> 1</p>
+                    <p class="photoDescribtion Price"><span class="goldenSpan"> price:</span> 200$ / Night</p>
+                    <input type="submit" value="Book Now" class="BookBotton"
+                        onclick="window.location.href='./booking.html';">
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="firstRow">
+            <div class="footerForDesktop">
+                <div class="logoFooter">
+                    <span>LOTUS</span>
+                    <br>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span style="margin-left : 5px;">contact@lotus.com</span>
+                    </div>
+                </div>
+                <div class="quicklinks">
+                    <div class="footerWord">QUICK LINKS</div>
+                    <div class="links">
+                        <ul>
+                            <a href="../index.html">
+                                <li class="listQuickLinks l1">home</li>
+                            </a>
+                            <a href="./booking.html">
+                                <li class="listQuickLinks l2">booking</li>
+                            </a>
+                            <a href="./profile.html">
+                                <li class="listQuickLinks l3">Profile</li>
+                            </a>
+                            <a href="./utilities.html">
+                                <li class="listQuickLinks l3">Utilities</li>
+                            </a>
+                            <a href="./Rooms.html">
+                                <li class="listQuickLinks l3">Rooms</li>
+                            </a>
+                            <a href="./signup.html">
+                                <li class="listQuickLinks l4">sign up</li>
+                            </a>
+                            <a href="./login.html">
+                                <li class="listQuickLinks l5">log in</li>
+                            </a>
+                            <a href="./aboutus.html">
+                                <li class="listQuickLinks">about us</li>
+                            </a>
+                            <a href="./contact.html">
+                                <li class="listQuickLinks">Contact us</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="massage">
+                    <span class="footerWord">OUR SLOGAN</span><br>
+                    <span class="sloganFooter">
+                        Book a place that was made for the Elite
+                    </span>
+                </div>
+            </div>
+            <!--For Mobile-->
+            <div class="mobileLinks">
+                <div class="links">
+                    <span class="footerWord">QUICK LINKS</span>
+                    <ul>
+                        <a href="../index.html">
+                            <li class="listQuickLinks l1">home</li>
+                        </a>
+                        <a href="./booking.html">
+                            <li class="listQuickLinks l2">booking</li>
+                        </a>
+                        <a href="./profile.html">
+                            <li class="listQuickLinks l3">Profile</li>
+                        </a>
+                        <a href="./utilities.html">
+                            <li class="listQuickLinks l3">Utilities</li>
+                        </a>
+                        <a href="./Rooms.html">
+                            <li class="listQuickLinks l3">Rooms</li>
+                        </a>
+                        <a href="./signup.html">
+                            <li class="listQuickLinks l4">sign up</li>
+                        </a>
+                        <a href="./login.html">
+                            <li class="listQuickLinks l5">log in</li>
+                        </a>
+                        <a href="./aboutus.html">
+                            <li class="listQuickLinks">about us</li>
+                        </a>
+                        <a href="./contact.html">
+                            <li class="listQuickLinks">Contact us</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="massage">
+                    <span class="footerWord">OUR SLOGAN</span>
+                    <p>Elite service for the
+                        Elite People</p>
+                </div>
+            </div>
+            <div class="logoFooterForMobile">
+                <div class="logoContainerForMobile">
+                    <span>LOTUS</span>
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span style="margin-left : 5px;">contact@lotus.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="secondRow">
+            <div class="social">
+                <a href=""><i class="lni lni-linkedin"></i>
+                    <a href=""><i class="lni lni-facebook"></i>
+                        <a href=""><i class="lni lni-instagram"></i>
+                            <a href=""><i class="lni lni-youtube"></i>
+            </div>
+            <div class="copyright">
+                &copy; 2026 COPYRIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+    <script src="../js/Rooms.js"></script>
+    <script src="../js/core.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>
