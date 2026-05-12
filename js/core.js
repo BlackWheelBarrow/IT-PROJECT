@@ -169,7 +169,7 @@ function contactusvalidation(name, number, mail, subject, message) {
         error = true;
         return;
     }
-    if (!(mail.includes('@')) || !(mail.includes('.')) || mail.indexOf === 0) {//checking if the email is valid
+    if (!(mail.includes('@')) || !(mail.includes('.')) || mail.indexOf('@') === 0) {//checking if the email is valid
          document.getElementById('error3cus').style.display = "block";
          error = true; 
     }
