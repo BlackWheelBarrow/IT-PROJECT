@@ -45,7 +45,7 @@ function signup(name, email, password, confirmpass, number) {
         return;
     }
     
-    if (!(email.includes('@')) || !(email.includes('.')) || email.indexOf===0) { // validating the email
+    if (!(email.includes('@')) || !(email.includes('.')) || email.indexOf('@')===0) { // validating the email
         document.getElementById('error2').style.display = "block";
         err = true;
     }
@@ -59,7 +59,7 @@ function signup(name, email, password, confirmpass, number) {
     }
     if (users[email] && !err) {//if the email exist
         document.getElementById('emexist').style.display = "block"; 
-        setTimeout(() => {
+        setTimeout(function()  {
             window.location.href = "login.html";
         }, 1000);
         return;
@@ -74,10 +74,9 @@ function signup(name, email, password, confirmpass, number) {
         localStorage.setItem('users', JSON.stringify(users));
         localStorage.setItem('currentuser', JSON.stringify(users[email]));
         document.getElementById('succes').style.display = "block";
-        setTimeout(() => {
+        setTimeout(function () {
             window.location.href = "profile.html";
         }, 1000);
-       
     }
     }
 /*---------------------login page--------------------------------*/
