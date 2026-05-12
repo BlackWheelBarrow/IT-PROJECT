@@ -271,3 +271,19 @@ h2 ,ul li{
 .searchicon {
     background-color: rgb(47, 49, 70);
 }
+.cardsParent {
+    flex-direction : row-reverse;
+}
+.firstSectionDiv {
+    /* background-color: orange; */
+    flex-direction : column-reverse;
+    margin-top : 20px;
+}
+.firstSectionTitle {
+    font-size : 60px;
+}
+@media screen and (max-width : 784px){
+    .firstSectionTitle {
+        font-size : 50px;
+    }
+}
