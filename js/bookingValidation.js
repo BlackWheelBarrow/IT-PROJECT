@@ -33,10 +33,10 @@ function bigfunc(){
     let capacityerror = document.getElementById("capacityerror");
     let manyroomserror = document.getElementById("manyroomserror");
     let successbooking = document.getElementById("successbooking");
+    let isContainSpecial = 0;
     
     manyroomserror.innerText = `Max Rooms To Book Is ${indvisuals} Rooms`;
     capacityerror.innerText = `Max capacity for ${rooms} Rooms is ${Excpectedminindvisual} Guests`;
-
     bookingerror1.style.display = "none";
     bookingerror2.style.display = "none";
     bookingerror3.style.display = "none";
@@ -53,21 +53,12 @@ function bigfunc(){
     capacityerror.style.display = "none";
     manyroomserror.style.display = "none";
     successbooking.style.display = "none";
-
-    if(firstName.length < 3 && !( /\d/.test(firstName) ) && firstName != ""){ 
-        counter = counter - 1;      
-        bookingerror1.style.display = "block";
-    } 
-    if(lastName.length < 3 && !( /\d/.test(lastName) ) && lastName != "") {
-         bookingerror2.style.display = "block";
-        counter = counter - 1;      
-    }
     if(firstName == ""){ 
         counter = counter - 1;      
         bookingerror10.style.display = "block";
     } 
     if(lastName == "") {
-         bookingerror11.style.display = "block";
+        bookingerror11.style.display = "block";
         counter = counter - 1;      
     }
     if(
@@ -82,30 +73,39 @@ function bigfunc(){
         firstName.includes("*") || lastName.includes("*") ||
         firstName.includes("(") || lastName.includes("(") ||
         firstName.includes(")") || lastName.includes(")") 
-      ) {
+    ) {
         bookingerror3.style.display = "block";
-        counter--;      
+        counter--;  
+        isContainSpecial = 1;    
     } 
-        
-        
-    if(noOFNights < 0 || noOFNights == 0){
+    
+    if(firstName.length < 3 && !( /\d/.test(firstName) ) && firstName != "" && !(isContainSpecial) ){ 
+        counter = counter - 1;      
+        bookingerror1.style.display = "block";
+    } 
+    if(lastName.length < 3 && !( /\d/.test(lastName) ) && lastName != "" && !(isContainSpecial)) {
+        bookingerror2.style.display = "block";
+        counter = counter - 1;      
+    }
+    
+    if(noOFNights <= 0){
         bookingerror4.style.display = "block";        
         counter--;      
     }
-    if(rooms < 0 || rooms == 0){
+    if(rooms <= 0){
         bookingerror5.style.display = "block";        
         counter--;      
     }
-    if(children < 0 || children == 0){
+    if(children < 0){
         bookingerror7.style.display = "block";        
         counter--;      
     }
-    if(adults < 0  || adults == 0){
+    if(adults <= 0){
         bookingerror6.style.display = "block";        
         counter--;      
     }
     
-    if(! (mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) ) && mail != ""){
+    if( ! (  mail.includes("@") && mail.includes(".") && !(mail.startsWith("@")) && !(mail.startsWith(".")) ) && mail != ""){
         bookingerror8.style.display = "block";        
         counter--;      
     }
@@ -113,6 +113,7 @@ function bigfunc(){
         bookingerror12.style.display = "block";        
         counter--;      
     }
+
     if(rooms > indvisuals){
         manyroomserror.style.display = "block";        
         counter--;      
@@ -125,7 +126,9 @@ function bigfunc(){
         bookingerror9.style.display = "block";        
         counter--;      
     }
+    
     if(counter == 9 ){
         successbooking.style.display = "block";        
     }
+
 }
